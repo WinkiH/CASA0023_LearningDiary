@@ -1,0 +1,49 @@
+# Week 8
+
+# SAR
+
+## Summary
+
+### Background
+
+Synthetic Aperture Radar -- SAR is an active sensor that its bands are able to pass through clouds and reaching the ground/ target surface, disregarding the weather condition e.g., percentage of cloud covers during the sensing date. It has a total of 8 bands that are tailored for different applications, its wavelength also has their own frequencies so that they would not be disturbed by other sensors. It is important to note that *calm* water usually appears dark in the SAR image as they reflect the energy pulses away from sensor (pulses cannot be reflected back to the sensor).
+
+[![Wavelength of different bands in SAR](images/SARwavelength.png)](SAR-wavelength)
+
+### Polarisation
+
+SAR detects both vertical (V) and horizontal (H) transmission as different surfaces respond differently to polarisations:
+
+1.  Rough surface scattering: VV (most sensitive)
+
+2.  Double bounce (pulses bounce twice before reflecting to the sensors e.g., buildings): HH (most sensitive)
+
+3.  Volume scattering (for objects with complex volume/ structures that waves can bounce and reflect within them): VH or HV
+
+Here it is also important to note *rough* water surface e.g., wavy during windy time or tsunami can reflect pules back through VV transmission.
+
+[![Graph showing different polarisation from different objects.](images/SARPolarization.jpg)](SAR-polarisation)
+
+### SAR techniques
+
+1.  InSAR: Interferometric synthetic aperture radar
+
+    Combine multiple SAR image over the same location to records topography, ideally for creating DEMs
+
+2.  DInSAR: Differential Interferometric synthetic aperture radar
+
+    Detect differences and changes between two images at different times, ideally for looking at vertical land movement (VLM) e.g., land uplift or subsidence
+
+## Applications
+
+As mentioned above, SAR images are useful in detecting land motion (uplift or subsidence), therefore, I have chosen a case study of detecting land subsidence along the North Java Coast in Indonesia by Sidiq et al. (2021). The authors acquired and compared SAR images in 2017 and 2020 provided by Sentinel-1, to reveal changes in topographic elevations between the two. It is also closely related to my group project, which is to identify areas that are prone to/ currently subjected to land subsidence! Regions/ cities along Java Coast are situated above the destructive plate boundaries (where indo-asutralian plate and pacific plate converge), vertical land movements induced by earthquakes are common (ref). In addition to that, rapid urban development in densely populated coastal cities e.g., Jakarta and Samarang also introduces risks to land subsidence (ref). Therefore, InSAR is useful in identifying regions that are subjected to land deformation. Sidiq et al (2021) reveals that Samarang and Pekalongan subjected to rapid land subsidence as shown by the interferograms and land subsidence profile acquire from InSAR. Some follow-ups can also be done after conducting InSAR land deformation detection, to identify the source for causing such land deformation patterns as land deformation can be induced by human or physical factors especially for Indonesia that has active tectonic activities (ref). Further data acquisition could be ground water extraction rate, geology (lithology), distance to faults, population changes etc.
+
+[![Land deformation in Jakarta using InSAR.](images/Jakarta.png)](SAR-jakarta)
+
+[![Land deformation in Semarang using InSAR.](images/Samarang.png)](SAR-Semarang)
+
+[![Land deformation in Pekalongan using InSAR.](images/Pekalongan.png)](SAR-pekalongan)
+
+However, there are some limitations of using InSAR to detect land motion. As InSAR is detecting changes between two images within the same pixels, it is important that there is no horizontal displacement of plate (should not be greater than 6 cm that out of the radar wavelength of Sentinel-1) (Tretyak et al., 2021). The recorded data should also be calibrated with the GNSS data to ensure the point is referenced correctly.
+
+## Reflections

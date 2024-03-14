@@ -1,0 +1,233 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CASA0023LearningDiary",
+    "section": "",
+    "text": "1 About me"
+  },
+  {
+    "objectID": "index.html#who",
+    "href": "index.html#who",
+    "title": "CASA0023LearningDiary",
+    "section": "1.1 Who?",
+    "text": "1.1 Who?\nHello! This is Winki currently doing MSc Urban Spatial Science at CASA UCL. This is my fourth year spending in the UK but the first year in London!\n\n\n\nThis is me spending time in Iceland during the field trip back in my bachelor degree :). Behind me is Jökulsárlón-Glacier lagoon with numerous floating icebergs that detached from various glacier outlets around the lagoon.\n\n\nBefore I came to CASA as a Data Scientist (self-proclaimed), I am a physical geographer who is always amazed by the physical landscape. I love travelling around the world and exploring the nature :). The most impressive trip is the field trip to Iceland (pics above), it was the first time for me to walk over glaciers and fool around glacial features e.g., walk and climb over moraines, visiting gigantic glacial erosion features. Although glacial environment is not my favourite topic, I still find it fascinating. My interests are looking at climate-related hazards and sea-level change. Oh yes! I am from Hong Kong, a densely populated city (phew). But I am more drawn to some quiet and tranquil places like the Isle of Skye or the other parts of Scotland!"
+  },
+  {
+    "objectID": "index.html#what-fun-facts-about-me",
+    "href": "index.html#what-fun-facts-about-me",
+    "title": "CASA0023LearningDiary",
+    "section": "1.2 What? Fun facts about me",
+    "text": "1.2 What? Fun facts about me\n\nI love scrolling through Google Map/ Google Earth (This gives me some travelling vibe!)\nI am sooooooo into sea-level change that I can spend an hour or more to explain the theories behind.\nI prefer taking buses rather than tube (except DLR) as I could see the view outside\nI don’t actually like coding…\nI love doing road trip but I don’t have a driving license\nI like sun bathing and getting tanned, in other words, I dislike winter"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Week 1",
+    "section": "",
+    "text": "3 An introduction to remote sensing"
+  },
+  {
+    "objectID": "intro.html#summary",
+    "href": "intro.html#summary",
+    "title": "2  Week 1",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\nRemote sensing is a form or a process of data collection over the earth body, which include but not limited to:\n\nBiosphere (living organisms/ forms)\nHydrosphere (terrestrial, oceanic, supra- or subglacial water body)\nCryosphere (ice sheets, glaciers, sea ice, ice bergs)\nAtmosphere (clouds, aerosols)\nLithosphere (soil)\n\nRemote sensing is usually achieved using remote sensors that are on board with the satellites or aircrafts. It is also a form of cloud computing data source that requires certain computational technologies to complete remote sensing. The most well-known service provider is the National Aeronautics and Space Administration (NASA), providing numerous open-source database for easy public assess (Earth Information Centre, 2024). Remote sensing has paved the way to monitor changes in remote areas e.g., deforestation in Amazon Forest (ref) and changes in relation to climate warming (ref).\n\n3.1.1 Active VS passive sensors\nRemote sensing mainly adopt two different types of sensors on board each of the satellite or aircrafts – active and/ or passive. Active sensor actively emit energy, electromagnetic waves, to the ground or targeted surfaces. It then detects any changes in the returning signal (e.g., wavelength) and calculate the returning time for the approximate distance between the two. Passive sensor does not emit energy, it detects the reflected energy (also electromagnetic waves) from the illuminating source – the Sun.\n\n\n\nGraph illustration showing the operations of active sensor. Source: GISGeography (2023)\n\n\n\n\n\nGraph illustration showing the operation of passive sensor. Source: GISGeography (2023)\n\n\n\n3.1.1.1 Electromagnetic waves\nElectromagnetic waves are the ways of energy being transported/ traveled around, like ocean waves, but electromagnetic waves do not require any medium for movement (they can even transported through a vacuumed space). Electromagnetic waves change according to the objects that they have encountered that creates a unique electromagnetic signatures – wavelengths for measurements. Electromagnetic waves are measured according to their wavelength – the distance between the crests (highest point of the cycle), while units of measurement vary from nano-meters to meters. As different materials reflect different values of electromagnetic waves, sensors then measured the changes/ types of electromagnetic wave to determine the properties of the remotely sensed material.\n\n\n\nReflected wavelengths of physical material of the Earth within the visible light spectrum.\n\n\n\n\n\n3.1.2 Resolutions\nResolutions tell the primary information about the satellite imagery, they can vary across different products and service providers. Understanding the resolutions is the most fundamental requirement for spatial analysts/ data users as the resolutions could significantly impact the accuracy and precision of the result. Resolutions can be divided into 4 types:\n1. Spatial: It measures the size of a single grid/ pixel in the unit of cm/m/km squared. The higher the spatial resolution, the more detail of the features can be revealed.\n2. Temporal: It measures the revisiting time of the sensors (satellite) in the unit of day, week, month, year. The higher the temporal resolution, the more frequent the revisiting time.\n3. Spectral: It reveals the number of bands a sensor can observe. The higher the spectral resolution, the higher number of bands can be detected (objects with more wavelengths can be detected as well).\n4. Radiometric: It reveals the ability of a sensor to accurately perceive and store signal, it is told by the number of bit. The higher the radiometric resolution, the higher the information/ colours it can perceive and store."
+  },
+  {
+    "objectID": "intro.html#applications",
+    "href": "intro.html#applications",
+    "title": "2  Week 1",
+    "section": "3.2 Applications",
+    "text": "3.2 Applications\nWith the rapid development of technologies and the availability of open-source data, remote sensing has been widely applied across sectors: environmental protections/ conversations, disaster risks reductions, humanitarian crisis etc. The most notable break through in scientific research using remote sensing is the examination of sea-level rise in both global and local level. A new era in sea-level monitoring is facilitated by remote sensing – the satellite altimetry era since 1992/1993 (The Earth Observatory NASA, 2024).\nPrior to the availability of satellite altimetry measurements of sea-level change, the only way to monitor sea-level change was using in-situ tide gauge along the coast. The limitations of using tide gauge is the spatial coverage of sea-level monitoring, it’s limited to coastal regions not open sea, and the uneven global distributions of tide gauge stations – more in the global north than global south (Beenstock et al., 2015).\n\n\n\nMap showing the distributions of in-situ tide gauges (black dots) and the coverage of satellite altimetry measurements by Jason-3\n\n\n\n3.2.1 High-precision satellite altimetry era\nSince 1992/1993 when JASON/POSEIDON satellite series made available, it gave rise to a more comprehensive overview of sea-level change. Cazenave et al., 2022 applied satellite altimetry measurement to examine trends of global and local sea-level rise. It provides a more comprehensive spatial coverage of sea-level changes, allows the monitoring of absolute sea-level change in both coastal and open sea regions. The merits of Cazenave et al work in 2022 are they also conducted model ensemble modelling, compiling several satellite altimeter datasets together to obtain mean observations to minimise biases from certain datasets. The second merit of Cazenave et al 2022 is the ability to utilise altimetry record to demonstrate variations in regional sea-level change and the importance of the corrections of glacial-isostatic adjustment (GIA) and vertical land motion (VLM).\nIt is important to correct all possible noises e.g., local VLM brought by groundwater extractions and account for uncertainties as highlighted by Prandi et al (2019). Global sea-level budget is a continuous evolving concept with numerous uncertainties brought by different components e.g., local rates of VLM, extent of GIA, ENSO cycle etc (Frederikse et al., 2016). Therefore, it is important to consider errors and limitations while applying remote sensing in monitoring global/ local sea-level changes. While Cazenave et al. (2022) paper is able to perform the awareness of the uncertainties listed above, to enhance the validity and precision of their analysis and remote sensing applications.\n\n\n\nObserved regional absolute sea-level change using satellite altimetry data with corrections."
+  },
+  {
+    "objectID": "intro.html#reflections",
+    "href": "intro.html#reflections",
+    "title": "2  Week 1",
+    "section": "3.3 Reflections",
+    "text": "3.3 Reflections\nI quite enjoyed the lecture as the content is quite fascinating. As a geographer, I usually used remote sensing dating such as satellite imagery or altimeter measurement data sets, to reconstruct the past observations or project the future changes but not knowing how remote sensing works. Learning the function and theory of how remote sensing work during the lecture provides me with insight on how to choose a more suitable remote sensing data sets for my (future) research based on the characteristics of the satellites and resolutions of the data sets.\nI found the practical work is pretty cool that I was able to identify the relative proportion of land cover in different cities (yes I have done two of them) and compare against them through plotting the graph up in R. And for SNAP, it is a BRAND NEW tool to me and there is no doubt that I encountered quite a number of troubles while using it. However, I still find SNAP is an interesting tool that it allows the examination of satellite imagery in a very detail ways. The functions that it has got really surprised me although it is way more completed than using QGIS and ArcGIS."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Week2.html#portfolio-making-with-xaringan-and-quarto",
+    "href": "Week2.html#portfolio-making-with-xaringan-and-quarto",
+    "title": "3  Week 2",
+    "section": "3.1 Portfolio making with xaringan and quarto",
+    "text": "3.1 Portfolio making with xaringan and quarto\nThis week we have learnt to create our online portfolio using Quarto Book and presentation slides using Xaringan. Below please find my presentation ^^"
+  },
+  {
+    "objectID": "Week3.html",
+    "href": "Week3.html",
+    "title": "4  Week 3",
+    "section": "",
+    "text": "5 Corrections and enhancement"
+  },
+  {
+    "objectID": "Week3.html#summary",
+    "href": "Week3.html#summary",
+    "title": "4  Week 3",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\nRemote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image because of… Ratio Texture PCA"
+  },
+  {
+    "objectID": "Week3.html#applications",
+    "href": "Week3.html#applications",
+    "title": "4  Week 3",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications"
+  },
+  {
+    "objectID": "Week3.html#reflections",
+    "href": "Week3.html#reflections",
+    "title": "4  Week 3",
+    "section": "5.3 Reflections",
+    "text": "5.3 Reflections"
+  },
+  {
+    "objectID": "Week4.html",
+    "href": "Week4.html",
+    "title": "5  Week 4",
+    "section": "",
+    "text": "6 Policy – The Bihar Kosi Recovery Project"
+  },
+  {
+    "objectID": "Week4.html#summary",
+    "href": "Week4.html#summary",
+    "title": "5  Week 4",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary\nKosi River is a trans-boundary river – upper steam flowing along Nepal all the way down to lower course in the Bihar region in India (ref). It subjected to repeated flooding, especially during the Summer Monsoon season from June to September. The most notable and disastrous flood was in 2008 – as known as the 2008 Kosi Flooding. The 2008 Kosi Flooding was originated from the breach of upstream embankment, channel discharge then rapidly displaced to downstream of Kosi, in the North Bihar regions (Ref). 6 districts in the North Bihar was inundated; 5.5 million people became homeless; more than 2500 km2 of cultivated land was submerged; economic loss of US$18.7 million was also reported (ref). Since then, the Indian government started the Bihar Kosi Flood Recovery Project to revitalise the Northern Bihar and enhance its flood resilience capacity.\n\n\n\nLANDSAT image showing the abandoned paleochannel that are marked by their avulsion year and the flooded areas during the 2008 Kosi Flood (shaded in red). A continuous avulsion of Kosi to the west to its current location is observed since 1760 the earliest.\n\n\nIt is important to note that Kosi River is a dynamic river as it has shifted westward for at least 113 m to the current location due to active tectonic movements (ref). Its dynamic nature created numerous abandoned channel that increases the risks of flooding to surrounding area, by providing more flood water outlets through the abandoned paleochannels (ref). Therefore, it is equally important to understand its physical settings while progressing on socio-economic reconstructions.\nThe project objectives of the “Environment and Social Management Framework” are listed as follow:\n\nReconstruction of houses that are earthquake and flood resistant\nEnhancing connectivity by building and repairing roads and bridges\nStrengthening flood management capacity in Kosi Basin\nBuilding social and financial capital by expanding livelihoods opportunities"
+  },
+  {
+    "objectID": "Week4.html#application",
+    "href": "Week4.html#application",
+    "title": "5  Week 4",
+    "section": "6.2 Application",
+    "text": "6.2 Application\nThis project did not outline the use of remote sensing techniques in post-disaster reconstruction and flood management; therefore, I am going to suggest the application of MODIS (Moderate Resolution Imaging Spectroradiometer) to enhance the precision and efficiency for post-disaster reconstructions and disaster risks reductions (EarthData, 2024). This suggestion is inspred by Arvind et al., 2016, where they proposed the use of satellite images from different months to identify and predict the flood extents for the next possible flood occurrence. They successfully applied to one of the flood events in 2009 in southern part of India (across various local regions), to identify the extent of flooded and non-flooded areas through remote sensing (Arvind et al., 2016). MODIS can monitor changes in biosphere – land cover; atmosphere – cloud cover (potential rainfall); hydrosphere – water level/ extent of water body; cryosphere – extent of snow cover (MODIS, 2024). In addition to the transboundary nature of Kosi River, Bihar is located at the lower course of glacier outlets in the Himalayas, where meltwater flow along Kosi River down to Bihar. Therefore, MODIS would be undoubtedly beneficial for the recovery project. It is to:\n\nIdentify vulnerable houses that are exposed to flood hazards (close to riverbank)\nIdentify collapsed infrastructure(s)\nMonitor water level especially in the upper course in Nepal (to avoid rapid displacement of flood water due to a sudden increase of channel discharge)\nIdentify non-flooded cultivated land/ newly built fertile soil (by flood sediments) for agricultural activities\n\n\n\n\nSatellite image (top) and processed image (bottom) from MODIS showing the extent of flooding half month later flood occurrence in mid August.\n\n\nHowever, some also suggested the use of Sentinel-2 data as an alternative for flood detection and management due to its high resolution and the availability of Synthetic Aperture Radar (SAR) sensors on board (Caballero et al., 2019; Tarpanelli et al., 2022). Although Sentinel-2 provides a higher resolution of 10 m, its revisit time required is longer than MODIS. The temporal resolution of MODIS is higher than Sentinel-2 at 2 to 3 days while having a spatial resolution of 250 m to 1000 m (EarthData, 2024). In Bihar region, where it suffers from heavy summer monsoon rainfall at a temporal scale at daily and weekly, it is necessary to monitor water levels and flood extent at a smaller temporal interval (Ahamed and Bolten, 2017). The smaller the temporal resolution, the better the flood detection and monitoring."
+  },
+  {
+    "objectID": "Week4.html#reflection",
+    "href": "Week4.html#reflection",
+    "title": "5  Week 4",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection\nTo be continued…"
+  },
+  {
+    "objectID": "Week5.html",
+    "href": "Week5.html",
+    "title": "6  Week 5",
+    "section": "",
+    "text": "7 Google Earth Engine"
+  },
+  {
+    "objectID": "Week5.html#summary",
+    "href": "Week5.html#summary",
+    "title": "6  Week 5",
+    "section": "7.1 Summary",
+    "text": "7.1 Summary\nGoogle Earth Engine (GEE) is another geospatial analysis platform for loading, processing, and analysing satellite imagery. GEE is quite different from other geospatial analysis platform. GEE itself contains a gallery of satellite imagery, imageries are stored on the server where users can directly load the imagery onlin without downloading. The big difference to another geospatial analysis tools e.g., SNAP, R Studio, or QGIS is that GEE is a server-side cloud-based machine. GEE runs on Google cloud-based server rather than local client-side machine; therefore, its performance is not impacted by the performance of local machines. In other words, the performance on GEE is not restricted by the processor speed, RAM, and storage capability. GEE can process large datasets at a very high speed using the data processors on the server-side. Another difference is that GEE uses different programming language, here we us JavaScript rather than Python. The advantage of using JavaScript is that the user (we) can see the output codes immediately after execution. Satellite imagery can be resampled into different scales, usually refers to down sampling or reducing images. Image can be reduced by region or neighbourhood.\n\n\n\nGoogle Earth Engine users’ interface -- JavaScript API, showing the features for workflow.\n\n\n\n7.1.1 Terms\nRaster: (satellite) image with colour bands\nVector: feature with geometry and attributes\nScale: resolution, determined when generating the final output product.\n\nCan down sample the data to a lower resolution to satisfy users’ needs.\nHave to be resampled to get different scales.\nThe resampling in each scale is taking the properties from the “parent” pixel, the resampled pixel will have the same properties as the parent pixel but just with different scale.\n\nResolutions: spatial, temporal, spectral."
+  },
+  {
+    "objectID": "Week5.html#applications",
+    "href": "Week5.html#applications",
+    "title": "6  Week 5",
+    "section": "7.2 Applications",
+    "text": "7.2 Applications\nGEE is widely used in remote sensing, especially in natural resource management. The creation of time lapse series even provides a holistic approach to the monitoring of environmental changes (Gorelick et al., 2017). GEE is usually used for time-series analysis for environmental studies which include (Taminminia et al., 2020):\n\nForest mapping\nDrought monitoring\nLand use/ land cover\nFire\nSurface water detection\nPaddy rice\nFlood\nSnow\nMine mapping\nDisease risk mapping\n\n\nThe most common usage of GEE is to conduct NDVI analysis and mapping the land cover change using Landsat/ satellite imagery. One of the case study is over the lower Yangtze River in Nanjing, China, where the authors uses the public data archive over the GGE platform for the detection of long-term spatial-temporal land-cover change (Zhang and Zhang, 2020). The filter the image of their study site using the same geographical boundaries and desired date (time) for data acquisition and processing. The advantage of using GEE is its ability to regenerate results accordingly, for each of the satellite images, using the algorithm (Zhao et al., 2021). By then, the users do not have to re-execute the code every time by themselves when they have to process images having the same geometry. The algorithm also provides a speedy way for result replication that enhances the efficiency of data processing.\n\n\n\nLand cover change detection from 1987 to 2017 over the lower course of Yangtze River using GEE.\n\n\nHowever, there are some limitations of GEE. GEE-based image analysis is constrained by the existing tools within the GEE API, GEE algorithms is unique on the Google servers (Amani et al., 2020). This means codes over GEE are not reproducible outside GEE platforms. In additions, atmospheric correction algorithms are not advances enough to reduce possible biases or errors (Amani et al., 2020). This means the reliability of the finaly products form GEE still remain uncertain when comparing to other platforms. If we considered all of these limitations to the above case study, the case study and findings are only reproducible within GEE platform by using the same tools. Atmospheric correction also hinders the NDVI analysis through the alteration of the ToA."
+  },
+  {
+    "objectID": "Week5.html#reflections",
+    "href": "Week5.html#reflections",
+    "title": "6  Week 5",
+    "section": "7.3 Reflections",
+    "text": "7.3 Reflections\nto be continued…"
+  },
+  {
+    "objectID": "Week6.html",
+    "href": "Week6.html",
+    "title": "7  Week 6",
+    "section": "",
+    "text": "8 Classification 1"
+  },
+  {
+    "objectID": "Week6.html#summary",
+    "href": "Week6.html#summary",
+    "title": "7  Week 6",
+    "section": "8.1 Summary",
+    "text": "8.1 Summary"
+  },
+  {
+    "objectID": "Week6.html#application",
+    "href": "Week6.html#application",
+    "title": "7  Week 6",
+    "section": "8.2 Application",
+    "text": "8.2 Application"
+  },
+  {
+    "objectID": "Week6.html#reflections",
+    "href": "Week6.html#reflections",
+    "title": "7  Week 6",
+    "section": "8.3 Reflections",
+    "text": "8.3 Reflections"
+  },
+  {
+    "objectID": "Week7.html",
+    "href": "Week7.html",
+    "title": "8  Week 7",
+    "section": "",
+    "text": "9 Classification 2"
+  },
+  {
+    "objectID": "Week7.html#summary",
+    "href": "Week7.html#summary",
+    "title": "8  Week 7",
+    "section": "9.1 Summary",
+    "text": "9.1 Summary"
+  },
+  {
+    "objectID": "Week7.html#applications",
+    "href": "Week7.html#applications",
+    "title": "8  Week 7",
+    "section": "9.2 Applications",
+    "text": "9.2 Applications"
+  },
+  {
+    "objectID": "Week7.html#relfections",
+    "href": "Week7.html#relfections",
+    "title": "8  Week 7",
+    "section": "9.3 Relfections",
+    "text": "9.3 Relfections"
+  },
+  {
+    "objectID": "Week8.html",
+    "href": "Week8.html",
+    "title": "9  Week 8",
+    "section": "",
+    "text": "10 SAR"
+  },
+  {
+    "objectID": "Week8.html#summary",
+    "href": "Week8.html#summary",
+    "title": "9  Week 8",
+    "section": "10.1 Summary",
+    "text": "10.1 Summary\n\n10.1.1 Background\nSynthetic Aperture Radar – SAR is an active sensor that its bands are able to pass through clouds and reaching the ground/ target surface, disregarding the weather condition e.g., percentage of cloud covers during the sensing date. It has a total of 8 bands that are tailored for different applications, its wavelength also has their own frequencies so that they would not be disturbed by other sensors. It is important to note that calm water usually appears dark in the SAR image as they reflect the energy pulses away from sensor (pulses cannot be reflected back to the sensor).\n\n\n\nWavelength of different bands in SAR\n\n\n\n\n10.1.2 Polarisation\nSAR detects both vertical (V) and horizontal (H) transmission as different surfaces respond differently to polarisations:\n\nRough surface scattering: VV (most sensitive)\nDouble bounce (pulses bounce twice before reflecting to the sensors e.g., buildings): HH (most sensitive)\nVolume scattering (for objects with complex volume/ structures that waves can bounce and reflect within them): VH or HV\n\nHere it is also important to note rough water surface e.g., wavy during windy time or tsunami can reflect pules back through VV transmission.\n\n\n\nGraph showing different polarisation from different objects.\n\n\n\n\n10.1.3 SAR techniques\n\nInSAR: Interferometric synthetic aperture radar\nCombine multiple SAR image over the same location to records topography, ideally for creating DEMs\nDInSAR: Differential Interferometric synthetic aperture radar\nDetect differences and changes between two images at different times, ideally for looking at vertical land movement (VLM) e.g., land uplift or subsidence"
+  },
+  {
+    "objectID": "Week8.html#applications",
+    "href": "Week8.html#applications",
+    "title": "9  Week 8",
+    "section": "10.2 Applications",
+    "text": "10.2 Applications\nAs mentioned above, SAR images are useful in detecting land motion (uplift or subsidence), therefore, I have chosen a case study of detecting land subsidence along the North Java Coast in Indonesia by Sidiq et al. (2021). The authors acquired and compared SAR images in 2017 and 2020 provided by Sentinel-1, to reveal changes in topographic elevations between the two. It is also closely related to my group project, which is to identify areas that are prone to/ currently subjected to land subsidence! Regions/ cities along Java Coast are situated above the destructive plate boundaries (where indo-asutralian plate and pacific plate converge), vertical land movements induced by earthquakes are common (ref). In addition to that, rapid urban development in densely populated coastal cities e.g., Jakarta and Samarang also introduces risks to land subsidence (ref). Therefore, InSAR is useful in identifying regions that are subjected to land deformation. Sidiq et al (2021) reveals that Samarang and Pekalongan subjected to rapid land subsidence as shown by the interferograms and land subsidence profile acquire from InSAR. Some follow-ups can also be done after conducting InSAR land deformation detection, to identify the source for causing such land deformation patterns as land deformation can be induced by human or physical factors especially for Indonesia that has active tectonic activities (ref). Further data acquisition could be ground water extraction rate, geology (lithology), distance to faults, population changes etc.\n\n\n\nLand deformation in Jakarta using InSAR.\n\n\n\n\n\nLand deformation in Semarang using InSAR.\n\n\n\n\n\nLand deformation in Pekalongan using InSAR.\n\n\nHowever, there are some limitations of using InSAR to detect land motion. As InSAR is detecting changes between two images within the same pixels, it is important that there is no horizontal displacement of plate (should not be greater than 6 cm that out of the radar wavelength of Sentinel-1) (Tretyak et al., 2021). The recorded data should also be calibrated with the GNSS data to ensure the point is referenced correctly."
+  },
+  {
+    "objectID": "Week8.html#reflections",
+    "href": "Week8.html#reflections",
+    "title": "9  Week 8",
+    "section": "10.3 Reflections",
+    "text": "10.3 Reflections"
+  }
+]

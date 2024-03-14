@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "CASA0023LearningDiary"
+  author: "Norah Jones"
+  date: "3/14/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - Week2.qmd
+    - Week3.qmd
+    - Week4.qmd
+    - Week5.qmd
+    - Week6.qmd
+    - Week7.qmd
+    - Week8.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
