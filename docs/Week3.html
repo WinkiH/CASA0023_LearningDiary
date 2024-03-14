@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#corrections-and-enhancement" id="toc-corrections-and-enhancement" class="nav-link active" data-scroll-target="#corrections-and-enhancement"><span class="header-section-number">5</span> Corrections and enhancement</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a></li>
+  <li><a href="#key-terms-summary" id="toc-key-terms-summary" class="nav-link" data-scroll-target="#key-terms-summary"><span class="header-section-number">5.1</span> Key terms summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">5.3</span> Reflections</a></li>
   </ul></li>
@@ -200,9 +200,51 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="corrections-and-enhancement" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Corrections and enhancement</h1>
-<section id="summary" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
-<p>Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image because of… Ratio Texture PCA</p>
+<section id="key-terms-summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="key-terms-summary"><span class="header-section-number">5.1</span> Key terms summary</h2>
+<p>Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image introduced by sensor itself (e.g., angle of viewing)/ landscape (e.g., hilly surface)/ atmosphere (e.g., atmospheric scattering of radiation) etc.</p>
+<ol type="1">
+<li><strong>Geometric corrections</strong> for image distortions introduced by physical factors e.g., sensor/ landscape itself</li>
+</ol>
+<ul>
+<li><p>Ground Control Points (GCPs) from local map or handheld devices needed to match the known points (of the image) to a location-referenced dataset.</p></li>
+<li><p>Geometric transformation algorithms to obtain RMSE (root-mean-squared-error), the lower the better ~0.5.</p></li>
+<li><p>More GCPs are required in order to lower the RMSE.</p></li>
+<li><p>Resample the raster layer.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Atmospheric corrections</strong> for image distortions introduced by atmosphere e.g., atmospheric scattering and topographic attenuation</li>
+</ol>
+<ul>
+<li><p>Necessary for measuring biophysical parameters e.g., NDVI (Normalised Difference Vegetation Index).</p></li>
+<li><p>Relative VS Absolute.</p></li>
+<li><p>Relative: the use of Dark Object Subtraction (DOS) or Pseudo-invariant Features (PIFs) to normalise relative to different bands within an image OR relative to different dates.</p></li>
+<li><p>Absolute: requires empirical data e.g., atmospheric model and local atmospheric visibility to scale up surface reflectance.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Orthorectification</strong> correction for image distortions introduced by the view angle of the sensor • Requires geometry and DEMs (elevation model).</li>
+</ol>
+<ul>
+<li><p>Consider the effect of solar azimuth and solar zenith.</p></li>
+<li><p>Solar azimuth:</p></li>
+<li><p>Solar zenith:</p></li>
+</ul>
+<ol start="4" type="1">
+<li><strong>Radiometric Calibration</strong> for transforming image brightness from Digital Number (DN) to spectral radiance</li>
+</ol>
+<ul>
+<li><p>Sensors only able to capture image brightness and stored as DN.</p></li>
+<li><p>Calibrated in a lab before launching the sensor.</p></li>
+</ul>
+<p>Miscellaneous related to remote sensing</p>
+<ol type="1">
+<li>Radiance</li>
+<li>Reflectance</li>
+<li>Ratio</li>
+<li>PCA</li>
+<li>Texture</li>
+<li>Fushion</li>
+</ol>
 </section>
 <section id="applications" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>

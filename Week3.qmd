@@ -2,9 +2,52 @@
 
 # Corrections and enhancement
 
-## Summary
+## Key terms summary
 
-Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image because of... Ratio Texture PCA
+Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image introduced by sensor itself (e.g., angle of viewing)/ landscape (e.g., hilly surface)/ atmosphere (e.g., atmospheric scattering of radiation) etc.
+
+1.  **Geometric corrections** for image distortions introduced by physical factors e.g., sensor/ landscape itself
+
+-   Ground Control Points (GCPs) from local map or handheld devices needed to match the known points (of the image) to a location-referenced dataset.
+
+-   Geometric transformation algorithms to obtain RMSE (root-mean-squared-error), the lower the better \~0.5.
+
+-   More GCPs are required in order to lower the RMSE.
+
+-   Resample the raster layer.
+
+2.  **Atmospheric corrections** for image distortions introduced by atmosphere e.g., atmospheric scattering and topographic attenuation
+
+-   Necessary for measuring biophysical parameters e.g., NDVI (Normalised Difference Vegetation Index).
+
+-   Relative VS Absolute.
+
+-   Relative: the use of Dark Object Subtraction (DOS) or Pseudo-invariant Features (PIFs) to normalise relative to different bands within an image OR relative to different dates.
+
+-   Absolute: requires empirical data e.g., atmospheric model and local atmospheric visibility to scale up surface reflectance.
+
+3.  **Orthorectification** correction for image distortions introduced by the view angle of the sensor • Requires geometry and DEMs (elevation model).
+
+-   Consider the effect of solar azimuth and solar zenith.
+
+-   Solar azimuth:
+
+-   Solar zenith:
+
+4.  **Radiometric Calibration** for transforming image brightness from Digital Number (DN) to spectral radiance
+
+-   Sensors only able to capture image brightness and stored as DN.
+
+-   Calibrated in a lab before launching the sensor.
+
+Miscellaneous related to remote sensing
+
+1.  Radiance
+2.  Reflectance
+3.  Ratio
+4.  PCA
+5.  Texture
+6.  Fushion
 
 ## Applications
 
