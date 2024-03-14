@@ -1,9 +1,10 @@
 project:
+  output-dir: docs
   type: book
 
 book:
   title: "CASA0023LearningDiary"
-  author: "Norah Jones"
+  author: "Wing Ka Ho"
   date: "3/14/2024"
   chapters:
     - index.qmd
