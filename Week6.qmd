@@ -1,6 +1,4 @@
-# Week 6
-
-# Classification 1
+# Week 6: Classification 1
 
 ## Summary
 

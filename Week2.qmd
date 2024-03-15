@@ -1,6 +1,4 @@
-# Week 2
-
-## Portfolio making with xaringan and quarto
+# Week 2: Portfolio
 
 This week we have learnt to create our online portfolio using Quarto Book and presentation slides using Xaringan. Below please find my presentation \^\^
 

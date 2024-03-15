@@ -1,6 +1,4 @@
-# Week 1
-
-# An introduction to remote sensing
+# Week 1: An introduction to remote sensing
 
 ## Summary
 

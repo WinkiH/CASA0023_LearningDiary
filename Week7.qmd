@@ -1,6 +1,4 @@
-# Week 7
-
-# Classification 2
+# Week 7: Classification 2
 
 ## Summary
 
