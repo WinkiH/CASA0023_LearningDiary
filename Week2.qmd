@@ -4,7 +4,7 @@ This week we have learnt to create our online portfolio using Quarto Book and pr
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
-  url = "https://winkih.github.io/xaringan_test/#1",
+  url = "https://winkih.github.io/CASA0023xaringan/#1",
   ratio = "16:9")
 
 ```
