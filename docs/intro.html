@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -212,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Atmosphere (clouds, aerosols)</li>
 <li>Lithosphere (soil)</li>
 </ol>
-<p>Remote sensing is usually achieved using remote sensors that are on board with the satellites or aircrafts. It is also a form of cloud computing data source that requires certain computational technologies to complete remote sensing. The most well-known service provider is the National Aeronautics and Space Administration (NASA), providing numerous open-source database for easy public assess (Earth Information Centre, 2024). Remote sensing has paved the way to monitor changes in remote areas e.g., deforestation in Amazon Forest (ref) and changes in relation to climate warming (ref).</p>
+<p>Remote sensing is usually achieved using remote sensors that are on board with the satellites or aircrafts. It is also a form of cloud computing data source that requires certain computational technologies to complete remote sensing. The most well-known service provider is the National Aeronautics and Space Administration (NASA), providing numerous open-source database for easy public assess <span class="citation" data-cites="earthinformationcentre2024">(<a href="references.html#ref-earthinformationcentre2024" role="doc-biblioref">Earth Information Centre 2024</a>)</span>. Remote sensing has paved the way to monitor changes in remote areas e.g., deforestation in Amazon Forest (ref) and changes in relation to climate warming (ref).</p>
 <section id="active-vs-passive-sensors" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="active-vs-passive-sensors"><span class="header-section-number">2.1.1</span> Active VS passive sensors</h3>
 <p>Remote sensing mainly adopt two different types of sensors on board each of the satellite or aircrafts – active and/ or passive. Active sensor actively emit energy, electromagnetic waves, to the ground or targeted surfaces. It then detects any changes in the returning signal (e.g., wavelength) and calculate the returning time for the approximate distance between the two. Passive sensor does not emit energy, it detects the reflected energy (also electromagnetic waves) from the illuminating source – the Sun.</p>
@@ -250,8 +269,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">2.2</span> Applications</h2>
-<p>With the rapid development of technologies and the availability of open-source data, remote sensing has been widely applied across sectors: environmental protections/ conversations, disaster risks reductions, humanitarian crisis etc. The most notable break through in scientific research using remote sensing is the examination of sea-level rise in both global and local level. A new era in sea-level monitoring is facilitated by remote sensing – the satellite altimetry era since 1992/1993 (The Earth Observatory NASA, 2024).</p>
-<p>Prior to the availability of satellite altimetry measurements of sea-level change, the only way to monitor sea-level change was using in-situ tide gauge along the coast. The limitations of using tide gauge is the spatial coverage of sea-level monitoring, it’s limited to coastal regions not open sea, and the uneven global distributions of tide gauge stations – more in the global north than global south (Beenstock et al., 2015).</p>
+<p>With the rapid development of technologies and the availability of open-source data, remote sensing has been widely applied across sectors: environmental protections/ conversations, disaster risks reductions, humanitarian crisis etc. The most notable break through in scientific research using remote sensing is the examination of sea-level rise in both global and local level. A new era in sea-level monitoring is facilitated by remote sensing – the satellite altimetry era since 1992/1993 <span class="citation" data-cites="theearthobservatory2022">(<a href="references.html#ref-theearthobservatory2022" role="doc-biblioref">The Earth Observatory 2022</a>)</span>.</p>
+<p>Prior to the availability of satellite altimetry measurements of sea-level change, the only way to monitor sea-level change was using in-situ tide gauge along the coast. The limitations of using tide gauge is the spatial coverage of sea-level monitoring, it’s limited to coastal regions not open sea, and the uneven global distributions of tide gauge stations – more in the global north than global south <span class="citation" data-cites="beenstock2015">(<a href="references.html#ref-beenstock2015" role="doc-biblioref">Beenstock et al. 2015</a>)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="sea-level-monitoring"><img src="images/tides_jsn_psmsl_2020.png" class="img-fluid figure-img"></a></p>
@@ -260,8 +279,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="high-precision-satellite-altimetry-era" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="high-precision-satellite-altimetry-era"><span class="header-section-number">2.2.1</span> High-precision satellite altimetry era</h3>
-<p>Since 1992/1993 when JASON/POSEIDON satellite series made available, it gave rise to a more comprehensive overview of sea-level change. Cazenave et al., 2022 applied satellite altimetry measurement to examine trends of global and local sea-level rise. It provides a more comprehensive spatial coverage of sea-level changes, allows the monitoring of absolute sea-level change in both coastal and open sea regions. The merits of Cazenave et al work in 2022 are they also conducted model ensemble modelling, compiling several satellite altimeter datasets together to obtain mean observations to minimise biases from certain datasets. The second merit of Cazenave et al 2022 is the ability to utilise altimetry record to demonstrate variations in regional sea-level change and the importance of the corrections of glacial-isostatic adjustment (GIA) and vertical land motion (VLM).</p>
-<p>It is important to correct all possible noises e.g., local VLM brought by groundwater extractions and account for uncertainties as highlighted by Prandi et al (2019). Global sea-level budget is a continuous evolving concept with numerous uncertainties brought by different components e.g., local rates of VLM, extent of GIA, ENSO cycle etc (Frederikse et al., 2016). Therefore, it is important to consider errors and limitations while applying remote sensing in monitoring global/ local sea-level changes. While Cazenave et al.&nbsp;(2022) paper is able to perform the awareness of the uncertainties listed above, to enhance the validity and precision of their analysis and remote sensing applications.</p>
+<p>Since 1992/1993 when JASON/POSEIDON satellite series made available, it gave rise to a more comprehensive overview of sea-level change. <span class="citation" data-cites="doi:10.1098/rspa.2022.0049">Cazenave and Moreira (<a href="references.html#ref-doi:10.1098/rspa.2022.0049" role="doc-biblioref">2022</a>)</span> applied satellite altimetry measurement to examine trends of global and local sea-level rise. It provides a more comprehensive spatial coverage of sea-level changes, allows the monitoring of absolute sea-level change in both coastal and open sea regions. The merits of <span class="citation" data-cites="doi:10.1098/rspa.2022.0049">Cazenave and Moreira (<a href="references.html#ref-doi:10.1098/rspa.2022.0049" role="doc-biblioref">2022</a>)</span> work in 2022 are they also conducted model ensemble modelling, compiling several satellite altimeter datasets together to obtain mean observations to minimise biases from certain datasets. The second merit of <span class="citation" data-cites="doi:10.1098/rspa.2022.0049">Cazenave and Moreira (<a href="references.html#ref-doi:10.1098/rspa.2022.0049" role="doc-biblioref">2022</a>)</span> is the ability to utilise altimetry record to demonstrate variations in regional sea-level change and the importance of the corrections of glacial-isostatic adjustment (GIA) and vertical land motion (VLM).</p>
+<p>It is important to correct all possible noises e.g., local VLM brought by groundwater extractions and account for uncertainties as highlighted by <span class="citation" data-cites="prandi2021">Prandi et al. (<a href="references.html#ref-prandi2021" role="doc-biblioref">2021</a>)</span>. Global sea-level budget is a continuous evolving concept with numerous uncertainties brought by different components e.g., local rates of VLM, extent of GIA, ENSO cycle etc <span class="citation" data-cites="https://doi.org/10.1002/2016GL070750">(<a href="references.html#ref-https://doi.org/10.1002/2016GL070750" role="doc-biblioref">Frederikse et al. 2016</a>)</span>. Therefore, it is important to consider errors and limitations while applying remote sensing in monitoring global/ local sea-level changes. While <span class="citation" data-cites="doi:10.1098/rspa.2022.0049">Cazenave and Moreira (<a href="references.html#ref-doi:10.1098/rspa.2022.0049" role="doc-biblioref">2022</a>)</span> paper is able to perform the awareness of the uncertainties listed above, to enhance the validity and precision of their analysis and remote sensing applications.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/rspa20220049f09.jpg" class="img-fluid figure-img"></p>
@@ -276,6 +295,26 @@ ul.task-list li input[type="checkbox"] {
 <p>I found the practical work is pretty cool that I was able to identify the relative proportion of land cover in different cities (yes I have done two of them) and compare against them through plotting the graph up in R. And for SNAP, it is a BRAND NEW tool to me and there is no doubt that I encountered quite a number of troubles while using it. However, I still find SNAP is an interesting tool that it allows the examination of satellite imagery in a very detail ways. The functions that it has got really surprised me although it is way more completed than using QGIS and ArcGIS.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-beenstock2015" class="csl-entry" role="listitem">
+Beenstock, Michael, Daniel Felsenstein, Eyal Frank, and Yaniv Reingewertz. 2015. <span>“Tide Gauge Location and the Measurement of Global Sea Level Rise.”</span> <em>Environmental and Ecological Statistics</em> 22 (1): 179–206. <a href="https://doi.org/10.1007/s10651-014-0293-4">https://doi.org/10.1007/s10651-014-0293-4</a>.
+</div>
+<div id="ref-doi:10.1098/rspa.2022.0049" class="csl-entry" role="listitem">
+Cazenave, Anny, and Lorena Moreira. 2022. <span>“Contemporary Sea-Level Changes from Global to Local Scales: A Review.”</span> <em>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 478 (2261): 20220049. <a href="https://doi.org/10.1098/rspa.2022.0049">https://doi.org/10.1098/rspa.2022.0049</a>.
+</div>
+<div id="ref-earthinformationcentre2024" class="csl-entry" role="listitem">
+Earth Information Centre. 2024. <span>“Explore Our Changing Planet.”</span> <a href="https://gis.earthdata.nasa.gov/portal/apps/sites/#/earth-information-center/">https://gis.earthdata.nasa.gov/portal/apps/sites/#/earth-information-center/</a>.
+</div>
+<div id="ref-https://doi.org/10.1002/2016GL070750" class="csl-entry" role="listitem">
+Frederikse, Thomas, Riccardo Riva, Marcel Kleinherenbrink, Yoshihide Wada, Michiel van den Broeke, and Ben Marzeion. 2016. <span>“Closing the Sea Level Budget on a Regional Scale: Trends and Variability on the Northwestern European Continental Shelf.”</span> <em>Geophysical Research Letters</em> 43 (20): 10, 864–10, 872. https://doi.org/<a href="https://doi.org/10.1002/2016GL070750">https://doi.org/10.1002/2016GL070750</a>.
+</div>
+<div id="ref-prandi2021" class="csl-entry" role="listitem">
+Prandi, Pierre, Benoit Meyssignac, Michaël Ablain, Giorgio Spada, Aurélien Ribes, and Jérôme Benveniste. 2021. <span>“Local Sea Level Trends, Accelerations and Uncertainties over 1993<span></span>2019.”</span> <em>Scientific Data</em> 8 (1): 1. <a href="https://doi.org/10.1038/s41597-020-00786-7">https://doi.org/10.1038/s41597-020-00786-7</a>.
+</div>
+<div id="ref-theearthobservatory2022" class="csl-entry" role="listitem">
+The Earth Observatory. 2022. <span>“Tracking 30 Years of Sea Level Rise.”</span> <a href="https://earthobservatory.nasa.gov/images/150192/tracking-30-years-of-sea-level-rise">https://earthobservatory.nasa.gov/images/150192/tracking-30-years-of-sea-level-rise</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
