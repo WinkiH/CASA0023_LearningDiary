@@ -10,7 +10,7 @@ Remote sensing is a form or a process of data collection over the earth body, wh
 4.  Atmosphere (clouds, aerosols)
 5.  Lithosphere (soil)
 
-Remote sensing is usually achieved using remote sensors that are on board with the satellites or aircrafts. It is also a form of cloud computing data source that requires certain computational technologies to complete remote sensing. The most well-known service provider is the National Aeronautics and Space Administration (NASA), providing numerous open-source database for easy public assess [@earthinformationcentre2024]. Remote sensing has paved the way to monitor changes in remote areas e.g., deforestation in Amazon Forest (ref) and changes in relation to climate warming (ref).
+Remote sensing is usually achieved using remote sensors that are on board with the satellites or aircrafts. It is also a form of cloud computing data source that requires certain computational technologies to complete remote sensing. The most well-known service provider is the National Aeronautics and Space Administration (NASA), providing numerous open-source database for easy public assess [@earthinformationcentre2024]. Remote sensing has paved the way to monitor changes in remote areas e.g., deforestation in Amazon Forest and changes in relation to climate warming [@yang2013].
 
 ### Active VS passive sensors
 

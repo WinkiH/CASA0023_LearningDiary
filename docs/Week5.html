@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -222,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>GEE is widely used in remote sensing, especially in natural resource management. The creation of time lapse series even provides a holistic approach to the monitoring of environmental changes (Gorelick et al., 2017). GEE is usually used for time-series analysis for environmental studies which include (Taminminia et al., 2020):</p>
+<p>GEE is widely used in remote sensing, especially in natural resource management. The creation of time lapse series even provides a holistic approach to the monitoring of environmental changes <span class="citation" data-cites="GORELICK201718">(<a href="references.html#ref-GORELICK201718" role="doc-biblioref">Gorelick et al. 2017</a>)</span>. GEE is usually used for time-series analysis for environmental studies which include <span class="citation" data-cites="TAMIMINIA2020152">(<a href="references.html#ref-TAMIMINIA2020152" role="doc-biblioref">Tamiminia et al. 2020</a>)</span>:</p>
 <ol type="1">
 <li>Forest mapping</li>
 <li>Drought monitoring</li>
@@ -236,20 +255,34 @@ ul.task-list li input[type="checkbox"] {
 <li>Disease risk mapping</li>
 </ol>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/V08j6xzaDrI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>The most common usage of GEE is to conduct NDVI analysis and mapping the land cover change using Landsat/ satellite imagery. One of the case study is over the lower Yangtze River in Nanjing, China, where the authors uses the public data archive over the GGE platform for the detection of long-term spatial-temporal land-cover change (Zhang and Zhang, 2020). The filter the image of their study site using the same geographical boundaries and desired date (time) for data acquisition and processing. The advantage of using GEE is its ability to regenerate results accordingly, for each of the satellite images, using the algorithm (Zhao et al., 2021). By then, the users do not have to re-execute the code every time by themselves when they have to process images having the same geometry. The algorithm also provides a speedy way for result replication that enhances the efficiency of data processing.</p>
+<p>The most common usage of GEE is to conduct NDVI analysis and mapping the land cover change using Landsat/ satellite imagery. One of the case study is over the lower Yangtze River in Nanjing, China, where the authors uses the public data archive over the GGE platform for the detection of long-term spatial-temporal land-cover change <span class="citation" data-cites="s20072091">(<a href="references.html#ref-s20072091" role="doc-biblioref">Zhang and Zhang 2020</a>)</span>. The filter the image of their study site using the same geographical boundaries and desired date (time) for data acquisition and processing. The advantage of using GEE is its ability to regenerate results accordingly, for each of the satellite images, using the algorithm. By then, the users do not have to re-execute the code every time by themselves when they have to process images having the same geometry. The algorithm also provides a speedy way for result replication that enhances the efficiency of data processing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="Yangtze"><img src="images/Yangtze.webp" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Land cover change detection from 1987 to 2017 over the lower course of Yangtze River using GEE.</figcaption>
+<figcaption class="figure-caption">Land cover change detection from 1987 to 2017 over the lower course of Yangtze River using GEE. <span class="citation" data-cites="s20072091">(<a href="references.html#ref-s20072091" role="doc-biblioref">Zhang and Zhang 2020</a>)</span></figcaption>
 </figure>
 </div>
-<p>However, there are some limitations of GEE. GEE-based image analysis is constrained by the existing tools within the GEE API, GEE algorithms is unique on the Google servers (Amani et al., 2020). This means codes over GEE are not reproducible outside GEE platforms. In additions, atmospheric correction algorithms are not advances enough to reduce possible biases or errors (Amani et al., 2020). This means the reliability of the finaly products form GEE still remain uncertain when comparing to other platforms. If we considered all of these limitations to the above case study, the case study and findings are only reproducible within GEE platform by using the same tools. Atmospheric correction also hinders the NDVI analysis through the alteration of the ToA.</p>
+<p>However, there are some limitations of GEE. GEE-based image analysis is constrained by the existing tools within the GEE API, GEE algorithms is unique on the Google servers <span class="citation" data-cites="9184118">(<a href="references.html#ref-9184118" role="doc-biblioref">Amani et al. 2020</a>)</span>. This means codes over GEE are not reproducible outside GEE platforms. In additions, atmospheric correction algorithms are not advances enough to reduce possible biases or errors <span class="citation" data-cites="9184118">(<a href="references.html#ref-9184118" role="doc-biblioref">Amani et al. 2020</a>)</span>. This means the reliability of the finaly products form GEE still remain uncertain when comparing to other platforms. If we considered all of these limitations to the above case study, the case study and findings are only reproducible within GEE platform by using the same tools. Atmospheric correction also hinders the NDVI analysis through the alteration of the ToA.</p>
 </section>
 <section id="reflections" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">6.3</span> Reflections</h2>
 <p>to be continued…</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-9184118" class="csl-entry" role="listitem">
+Amani, Meisam, Arsalan Ghorbanian, Seyed Ali Ahmadi, Mohammad Kakooei, Armin Moghimi, S. Mohammad Mirmazloumi, Sayyed Hamed Alizadeh Moghaddam, et al. 2020. <span>“Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 13: 5326–50. <a href="https://doi.org/10.1109/JSTARS.2020.3021052">https://doi.org/10.1109/JSTARS.2020.3021052</a>.
+</div>
+<div id="ref-GORELICK201718" class="csl-entry" role="listitem">
+Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em> 202: 18–27. https://doi.org/<a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
+</div>
+<div id="ref-TAMIMINIA2020152" class="csl-entry" role="listitem">
+Tamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. <span>“Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 164: 152–70. https://doi.org/<a href="https://doi.org/10.1016/j.isprsjprs.2020.04.001">https://doi.org/10.1016/j.isprsjprs.2020.04.001</a>.
+</div>
+<div id="ref-s20072091" class="csl-entry" role="listitem">
+Zhang, Dong-Dong, and Lei Zhang. 2020. <span>“Land Cover Change in the Central Region of the Lower Yangtze River Based on Landsat Imagery and the Google Earth Engine: A Case Study in Nanjing, China.”</span> <em>Sensors</em> 20 (7). <a href="https://doi.org/10.3390/s20072091">https://doi.org/10.3390/s20072091</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
