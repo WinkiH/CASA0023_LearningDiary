@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -62,6 +81,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -172,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#key-terms-corrections" id="toc-key-terms-corrections" class="nav-link" data-scroll-target="#key-terms-corrections"><span class="header-section-number">4.1.1</span> Key Terms: Corrections</a></li>
-  <li><a href="#key-terms-miscellaneous" id="toc-key-terms-miscellaneous" class="nav-link" data-scroll-target="#key-terms-miscellaneous"><span class="header-section-number">4.1.2</span> Key terms: miscellaneous</a></li>
+  <li><a href="#key-terms-enhancement" id="toc-key-terms-enhancement" class="nav-link" data-scroll-target="#key-terms-enhancement"><span class="header-section-number">4.1.2</span> Key terms: enhancement</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">4.3</span> Reflections</a></li>
@@ -232,13 +253,25 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 </section>
-<section id="key-terms-miscellaneous" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="key-terms-miscellaneous"><span class="header-section-number">4.1.2</span> Key terms: miscellaneous</h3>
+<section id="key-terms-enhancement" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="key-terms-enhancement"><span class="header-section-number">4.1.2</span> Key terms: enhancement</h3>
 <ol type="1">
 <li><p><strong>Digital Number (DN):</strong> in a form of binary integer (bits) that requires transformation, represents the intensities (brightness) of a pixel.</p></li>
 <li><p><strong>Radiance/ Top of Atmosphere (TOA) radiance:</strong> the amount of light that a sensor receives through reflectance from an object, with a unit of watt.</p></li>
-<li><p><strong>(Surface) Reflectance:</strong> property of a material being observed, dependent on light source (requires illuminating source for reflection to take place). <strong>TOA reflectance:</strong> converted from TOA radiance.</p></li>
-<li><p><strong>Band Ratioing:</strong> (for DN values in different bands), to compare DN values in different bands to look at the differences e.g., NDVI (Normalised Difference Vegetation Index, to be discussed in the applications part).</p></li>
+<li><p><strong>(Surface) Reflectance:</strong> property of a material being observed, dependent on light source (requires illuminating source for reflection to take place)./ <strong>TOA reflectance:</strong> converted from TOA radiance.</p></li>
+<li><p><strong>Band Ratioing:</strong> (for DN values in different bands), to compare DN values in different bands to identify certain features e.g., NDVI for vegetation cover (Normalised Difference Vegetation Index, to be discussed in the applications part).</p>
+<ul>
+<li>Sample equation for obtaining NDVI: <span class="math display">\[NDVI= \frac{NIR-Red}{NIR+Red}\]</span></li>
+<li>Sample work of NDVI from my practical – looking at the differences in NDVI between cities (Seoul) and rural area (Jeju Island) in South Korea.</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="NDVI-Korea"><img src="images/NDVI.jpg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">My practical work focusing on the use of NDVI in exploring vegetation cover, the higher the index the denser the vegetation cover. Clear differences in NDVI is shown between Seoul on the left (a highly urbanised city) and Jeju Island on the right (a rural island).</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
 <li><p><strong>Principal Component Analysis (PCA):</strong> the transformation of original data to a new one for dimensionality reduction, from multi-spectral data to uncorrelated/ smaller dataset.</p></li>
 <li><p><strong>Texture:</strong> captures the spatial distribution of grey values.</p></li>
 <li><p><strong>Fusion:</strong> combining data from different (multiple) sources into one.</p></li>
@@ -247,11 +280,37 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
+<p>This week I am going to explore the usefulness of band ratioing in monitoring vegetation drought in Oklahoma Mesonet, the USA, by using NDVI (Normalised Differences Vegetation Index) and NDWI (Normalised Differences Water Index)<span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>. The authors presented temporal analysis of changes in vegetation density and soil moisture (water content in soil) by comparing the changes of NDVI and NWVI across the time series. Changes in NDVI are in line with changes in NDWI as reflected by the same periodic changes in NDVI and NDWI. This implies that the density of vegetation is dependent upon the availability of water supply, which it is true that water is essential for sustaining vegetation growth <span class="citation" data-cites="https://doi.org/10.1111/nph.12952">(<a href="references.html#ref-https://doi.org/10.1111/nph.12952" role="doc-biblioref">He and Dijkstra 2014</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="oklahoma-NDVI-NDWI"><img src="images/NDVINDWI.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Changes in NDVI and NDWI in the study area across time <span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>.</figcaption>
+</figure>
+</div>
+<p>NDVI is useful in revealing the spatial distribution and density of vegetation cover, a higher index reflects a denser vegetation cover. NDVI is also useful for temporal analysis for the changes of vegetation cover over time, a decrease in NDVI indicates a reduction in vegetation and vice versa for an increase in NDVI <span class="citation" data-cites="Othman2018">(<a href="references.html#ref-Othman2018" role="doc-biblioref">Othman et al. 2018</a>)</span>. However, the above study shows that NDVI never gone down to 0 throughout the study even NDWI went down drastically in August 2006. This can possibly be explained by 1). plants could be drought resistant 2). plants are able to regulate their water consumption pattern to sustain their growth <span class="citation" data-cites="doi:10.1126/science.aaz7614">(<a href="references.html#ref-doi:10.1126/science.aaz7614" role="doc-biblioref">Gupta, Rico-Medina, and Ana I. Caño-Delgado 2020</a>)</span>.</p>
+<p>NDWI is useful in monitoring changes of water content on land or along the coast. NDWI temporal analysis also allows us to understand the moisture content or changes in the extent of water body <span class="citation" data-cites="MEMON201599">(<a href="references.html#ref-MEMON201599" role="doc-biblioref">Memon et al. 2015</a>)</span>. If NDWI remains low for a long time such as from December 2005 to April 2006 in the above study, it is more likely that Oklahoma was experiencing drought/ water content remained low at all times. Sample equation for obtaining NDWI is <span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>: <span class="math display">\[NDWI= \frac{G-NIR}{G+NIR}\]</span></p>
 </section>
 <section id="reflections" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">4.3</span> Reflections</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-https://doi.org/10.1029/2008GL035772" class="csl-entry" role="listitem">
+Gu, Yingxin, Eric Hunt, Brian Wardlow, Jeffrey B. Basara, Jesslyn F. Brown, and James P. Verdin. 2008. <span>“Evaluation of MODIS NDVI and NDWI for Vegetation Drought Monitoring Using Oklahoma Mesonet Soil Moisture Data.”</span> <em>Geophysical Research Letters</em> 35 (22). https://doi.org/<a href="https://doi.org/10.1029/2008GL035772">https://doi.org/10.1029/2008GL035772</a>.
+</div>
+<div id="ref-doi:10.1126/science.aaz7614" class="csl-entry" role="listitem">
+Gupta, Aditi, Andrés Rico-Medina, and Ana I. Caño-Delgado. 2020. <span>“The Physiology of Plant Responses to Drought.”</span> <em>Science (New York, N.Y.)</em> 368 (6488): 266–69. <a href="https://doi.org/10.1126/science.aaz7614">https://doi.org/10.1126/science.aaz7614</a>.
+</div>
+<div id="ref-https://doi.org/10.1111/nph.12952" class="csl-entry" role="listitem">
+He, Mingzhu, and Feike A. Dijkstra. 2014. <span>“Drought Effect on Plant Nitrogen and Phosphorus: A Meta-Analysis.”</span> <em>New Phytologist</em> 204 (4): 924–31. https://doi.org/<a href="https://doi.org/10.1111/nph.12952">https://doi.org/10.1111/nph.12952</a>.
+</div>
+<div id="ref-MEMON201599" class="csl-entry" role="listitem">
+Memon, Akhtar Ali, Sher Muhammad, Said Rahman, and Mateeul Haq. 2015. <span>“Flood Monitoring and Damage Assessment Using Water Indices: A Case Study of Pakistan Flood-2012.”</span> <em>The Egyptian Journal of Remote Sensing and Space Science</em> 18 (1): 99–106. https://doi.org/<a href="https://doi.org/10.1016/j.ejrs.2015.03.003">https://doi.org/10.1016/j.ejrs.2015.03.003</a>.
+</div>
+<div id="ref-Othman2018" class="csl-entry" role="listitem">
+Othman, M A, Z H Ash’aari, A Z Aris, and M F Ramli. 2018. <span>“Tropical Deforestation Monitoring Using NDVI from MODIS Satellite: A Case Study in Pahang, Malaysia.”</span> <em>IOP Conference Series: Earth and Environmental Science</em> 169 (1): 012047. <a href="https://doi.org/10.1088/1755-1315/169/1/012047">https://doi.org/10.1088/1755-1315/169/1/012047</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
