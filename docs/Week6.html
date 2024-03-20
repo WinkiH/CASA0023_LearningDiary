@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -144,7 +163,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2: Xaringan</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -199,7 +218,11 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#how" id="toc-how" class="nav-link" data-scroll-target="#how"><span class="header-section-number">7.1.1</span> How?</a></li>
+  <li><a href="#a-deep-dive-into-cart" id="toc-a-deep-dive-into-cart" class="nav-link" data-scroll-target="#a-deep-dive-into-cart"><span class="header-section-number">7.1.2</span> A deep dive into CART</a></li>
+  </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
   </ul>
@@ -227,14 +250,68 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<p>Classification in remote sensing is a process that pixels in a remote sensing imagery are classified into different classes based on their distinctive features as identifies by human or machine (computer). Classification of pixels in imagery allows the monitoring of land use/ cover changes in both spatial and temporal sense. This summary will go through different methods of classifications and types of machine learning.</p>
+<section id="how" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="how"><span class="header-section-number">7.1.1</span> How?</h3>
+<ul>
+<li><p>Inductive learning – Expert Systems</p>
+<ul>
+<li><p>Expert user to train the model, requires human knowledge/ intelligence to solve problems</p></li>
+<li><p>Using decision tree for knowledge representation (form human)</p></li>
+</ul></li>
+<li><p>Machine learning</p>
+<ul>
+<li><p>Without human interference, just machine itself to learn</p></li>
+<li><p><strong>CART:</strong> classification and regression trees</p></li>
+<li><p><strong>Random Forests:</strong> numerous classification decision trees, Bootstrapping (out of bag sample, OOB), random and limited control on development</p></li>
+</ul></li>
+<li><p>Image classification</p>
+<ul>
+<li><p><strong>Supervised:</strong> inductive learning, data testing + training, parameter settings, pixels are treated in isolation: contextual, objects, texture</p></li>
+<li><p><strong>Unsupervised:</strong> computer to cluster based on the info and characteristics, the use of DBSCAN, cluster busting</p></li>
+<li><p><strong>Support Vector Machines (SVM):</strong> a supervised machine learning model, identifying the optimal hyperplane to distinguish points with different classes</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="a-deep-dive-into-cart" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="a-deep-dive-into-cart"><span class="header-section-number">7.1.2</span> A deep dive into CART</h3>
+<ul>
+<li><p>Classification trees + Regression trees = CART</p></li>
+<li><p>Gini Impurity: leaf with the lowest Gini Impurities wins = pure (pixels belong to the same class, no mixture of classes)</p></li>
+<li><p>Classification trees: classify data into discrete classes</p></li>
+<li><p>Regression trees: to decide where to subset the data, requires the calculation of sum of squared residuals (SSR), presented in numeric value not discrete classes</p></li>
+<li><p>Problems: <strong>overfitting</strong> with high variance and low bias</p></li>
+<li><p>Solutions: <strong>weakest link pruning</strong> or removing the weakest part of the model</p></li>
+</ul>
+</section>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<p>The use of classification is commonly seen where studies are aiming to monitor or identify changes in land use in terms of sptio-temporal sense, especially in relation to urban development and vegetation cover. <span class="citation" data-cites="FARUQUE2022100699">Faruque et al. (<a href="references.html#ref-FARUQUE2022100699" role="doc-biblioref">2022</a>)</span> paper uses a supervised classification technique to classify land use cover in their study area – a mangrove forests in the southwest of Bangladesh. “Land Use and Land Cover” (LULC) maps are 4 different years are then created based on the classification techniques they deployed in the machine during the pre-processing stage.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="LULC"><img src="images/LULC.jpg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">LULC maps showing the changes in land use between 1990 and 2020 based on the classification techniques that the authors deployed at the beginning of their study <span class="citation" data-cites="FARUQUE2022100699">(<a href="references.html#ref-FARUQUE2022100699" role="doc-biblioref">Faruque et al. 2022</a>)</span>.</figcaption>
+</figure>
+</div>
+<p>It is useful in detecting the dynamic spatio-temporal change in land use without re-computing/ re-processing satellite imagery for each of the year. The overall accuracy of this supervised model is over 92%, and this research will be undoubtedly useful in monitoring humans’ activities across the mangrove forests through time. Although urbanisation did not degrade the mangrove forests areas, the agricultural practices change quite a lot as reflected by the shift from agriculture to aqua-agriculture. The LULC map provides a comprehensive understanding of how a better land-use planning can be introduced into this region to facilitates agricultural development, based on the land use changes observed in this classification study <span class="citation" data-cites="DHAR2018617">(<a href="references.html#ref-DHAR2018617" role="doc-biblioref">Dhar et al. 2018</a>)</span>.</p>
+<p>However, supervised classification introduces some limitations 1) requires efforts on collecting and verifying the trained data set 2) biases introduced by human. We all know that machine learning could never be perfect, there must be some errors or biases included. The best practice that we can fit in is to cross-validate the model and sensitivity analysis to <strong>minimise</strong> errors <span class="citation" data-cites="PEDRODUARTESILVA2017772">(<a href="references.html#ref-PEDRODUARTESILVA2017772" role="doc-biblioref">Pedro Duarte Silva 2017</a>)</span>.</p>
 </section>
 <section id="reflections" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.3</span> Reflections</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-DHAR2018617" class="csl-entry" role="listitem">
+Dhar, Aurup Ratan, Md. Monirul Islam, Arifa Jannat, and Jasim Uddin Ahmed. 2018. <span>“Wetland Agribusiness Aspects and Potential in Bangladesh.”</span> <em>Data in Brief</em> 16: 617–21. https://doi.org/<a href="https://doi.org/10.1016/j.dib.2017.11.055">https://doi.org/10.1016/j.dib.2017.11.055</a>.
+</div>
+<div id="ref-FARUQUE2022100699" class="csl-entry" role="listitem">
+Faruque, Md. Jamal, Zoltan Vekerdy, Md. Yeasir Hasan, Kamal Ziaul Islam, Beverly Young, Mohammad Tofayal Ahmed, Minhaj Uddin Monir, Shaik Muntasir Shovon, Jannatul Ferdaus Kakon, and Prionti Kundu. 2022. <span>“Monitoring of Land Use and Land Cover Changes by Using Remote Sensing and GIS Techniques at Human-Induced Mangrove Forests Areas in Bangladesh.”</span> <em>Remote Sensing Applications: Society and Environment</em> 25: 100699. https://doi.org/<a href="https://doi.org/10.1016/j.rsase.2022.100699">https://doi.org/10.1016/j.rsase.2022.100699</a>.
+</div>
+<div id="ref-PEDRODUARTESILVA2017772" class="csl-entry" role="listitem">
+Pedro Duarte Silva, A. 2017. <span>“Optimization Approaches to Supervised Classification.”</span> <em>European Journal of Operational Research</em> 261 (2): 772–88. https://doi.org/<a href="https://doi.org/10.1016/j.ejor.2017.02.020">https://doi.org/10.1016/j.ejor.2017.02.020</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

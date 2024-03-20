@@ -55,16 +55,18 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -79,14 +81,47 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5LZK055F2X"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
+</script>
 
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/casa_logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">CASA0023 Learning Diary</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/WinkiH/CASA0023_LearningDiary" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -102,14 +137,9 @@ div.csl-indent {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA0023 Learning Diary</a> 
-    </div>
-      </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -132,7 +162,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2: Portfolio</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2: Xaringan</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -226,12 +256,6 @@ P. G. Diwakar. 2016. <span>“Flood Assessment Using Multi-Temporal Modis
 Satellite Images.”</span> <em>Procedia Computer Science</em> 89: 575–86.
 https://doi.org/<a href="https://doi.org/10.1016/j.procs.2016.06.017">https://doi.org/10.1016/j.procs.2016.06.017</a>.
 </div>
-<div id="ref-AshokAmgoth2021Modw" class="csl-entry" role="listitem">
-Ashok, Amgoth, Hari Ponnamma Rani, and K. V. Jayakumar. 2021.
-<span>“Monitoring of dynamic wetland changes using NDVI and NDWI based
-landsat imagery.”</span> <em>Remote sensing applications</em> 23:
-100547–47.
-</div>
 <div id="ref-beenstock2015" class="csl-entry" role="listitem">
 Beenstock, Michael, Daniel Felsenstein, Eyal Frank, and Yaniv
 Reingewertz. 2015. <span>“Tide Gauge Location and the Measurement of
@@ -269,6 +293,12 @@ Chen, N. Sh., G. Sh. Hu, W. Deng, N. Khanal, Y. H. Zhu, and D. Han.
 Basin.”</span> <em>Natural Hazards and Earth System Sciences</em> 13
 (3): 795808. <a href="https://doi.org/10.5194/nhess-13-795-2013">https://doi.org/10.5194/nhess-13-795-2013</a>.
 </div>
+<div id="ref-DHAR2018617" class="csl-entry" role="listitem">
+Dhar, Aurup Ratan, Md. Monirul Islam, Arifa Jannat, and Jasim Uddin
+Ahmed. 2018. <span>“Wetland Agribusiness Aspects and Potential in
+Bangladesh.”</span> <em>Data in Brief</em> 16: 617–21.
+https://doi.org/<a href="https://doi.org/10.1016/j.dib.2017.11.055">https://doi.org/10.1016/j.dib.2017.11.055</a>.
+</div>
 <div id="ref-dixit2009" class="csl-entry" role="listitem">
 Dixit, Ajaya. 2009. <span>“Kosi Embankment Breach in Nepal: Need for a
 Paradigm Shift in Responding to Floods.”</span> <em>Economic and
@@ -281,6 +311,15 @@ Planet.”</span> <a href="https://gis.earthdata.nasa.gov/portal/apps/sites/#/ea
 <div id="ref-earthdata" class="csl-entry" role="listitem">
 EarthData. n.d. <span>“MODIS NRT Global Flood Product.”</span> <a href="https://www.earthdata.nasa.gov/learn/find-data/near-real-time/modis-nrt-global-flood-product">https://www.earthdata.nasa.gov/learn/find-data/near-real-time/modis-nrt-global-flood-product</a>.
 </div>
+<div id="ref-FARUQUE2022100699" class="csl-entry" role="listitem">
+Faruque, Md. Jamal, Zoltan Vekerdy, Md. Yeasir Hasan, Kamal Ziaul Islam,
+Beverly Young, Mohammad Tofayal Ahmed, Minhaj Uddin Monir, Shaik
+Muntasir Shovon, Jannatul Ferdaus Kakon, and Prionti Kundu. 2022.
+<span>“Monitoring of Land Use and Land Cover Changes by Using Remote
+Sensing and GIS Techniques at Human-Induced Mangrove Forests Areas in
+Bangladesh.”</span> <em>Remote Sensing Applications: Society and
+Environment</em> 25: 100699. https://doi.org/<a href="https://doi.org/10.1016/j.rsase.2022.100699">https://doi.org/10.1016/j.rsase.2022.100699</a>.
+</div>
 <div id="ref-https://doi.org/10.1002/2016GL070750" class="csl-entry" role="listitem">
 Frederikse, Thomas, Riccardo Riva, Marcel Kleinherenbrink, Yoshihide
 Wada, Michiel van den Broeke, and Ben Marzeion. 2016. <span>“Closing the
@@ -288,17 +327,28 @@ Sea Level Budget on a Regional Scale: Trends and Variability on the
 Northwestern European Continental Shelf.”</span> <em>Geophysical
 Research Letters</em> 43 (20): 10, 864–10, 872. https://doi.org/<a href="https://doi.org/10.1002/2016GL070750">https://doi.org/10.1002/2016GL070750</a>.
 </div>
-<div id="ref-GAO1996257" class="csl-entry" role="listitem">
-Gao, Bo-cai. 1996. <span>“NDWI<span></span>a Normalized Difference Water
-Index for Remote Sensing of Vegetation Liquid Water from Space.”</span>
-<em>Remote Sensing of Environment</em> 58 (3): 257–66.
-https://doi.org/<a href="https://doi.org/10.1016/S0034-4257(96)00067-3">https://doi.org/10.1016/S0034-4257(96)00067-3</a>.
-</div>
 <div id="ref-GORELICK201718" class="csl-entry" role="listitem">
 Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David
 Thau, and Rebecca Moore. 2017. <span>“Google Earth Engine:
 Planetary-Scale Geospatial Analysis for Everyone.”</span> <em>Remote
 Sensing of Environment</em> 202: 18–27. https://doi.org/<a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
+</div>
+<div id="ref-https://doi.org/10.1029/2008GL035772" class="csl-entry" role="listitem">
+Gu, Yingxin, Eric Hunt, Brian Wardlow, Jeffrey B. Basara, Jesslyn F.
+Brown, and James P. Verdin. 2008. <span>“Evaluation of MODIS NDVI and
+NDWI for Vegetation Drought Monitoring Using Oklahoma Mesonet Soil
+Moisture Data.”</span> <em>Geophysical Research Letters</em> 35 (22).
+https://doi.org/<a href="https://doi.org/10.1029/2008GL035772">https://doi.org/10.1029/2008GL035772</a>.
+</div>
+<div id="ref-doi:10.1126/science.aaz7614" class="csl-entry" role="listitem">
+Gupta, Aditi, Andrés Rico-Medina, and Ana I. Caño-Delgado. 2020.
+<span>“The Physiology of Plant Responses to Drought.”</span> <em>Science
+(New York, N.Y.)</em> 368 (6488): 266–69. <a href="https://doi.org/10.1126/science.aaz7614">https://doi.org/10.1126/science.aaz7614</a>.
+</div>
+<div id="ref-https://doi.org/10.1111/nph.12952" class="csl-entry" role="listitem">
+He, Mingzhu, and Feike A. Dijkstra. 2014. <span>“Drought Effect on Plant
+Nitrogen and Phosphorus: A Meta-Analysis.”</span> <em>New
+Phytologist</em> 204 (4): 924–31. https://doi.org/<a href="https://doi.org/10.1111/nph.12952">https://doi.org/10.1111/nph.12952</a>.
 </div>
 <div id="ref-kafle2017" class="csl-entry" role="listitem">
 Kafle, K. R., S. N. Khanal, and R. K. Dahal. 2017. <span>“Consequences
@@ -327,6 +377,11 @@ Othman, M A, Z H Ash’aari, A Z Aris, and M F Ramli. 2018.
 <span>“Tropical Deforestation Monitoring Using NDVI from MODIS
 Satellite: A Case Study in Pahang, Malaysia.”</span> <em>IOP Conference
 Series: Earth and Environmental Science</em> 169 (1): 012047. <a href="https://doi.org/10.1088/1755-1315/169/1/012047">https://doi.org/10.1088/1755-1315/169/1/012047</a>.
+</div>
+<div id="ref-PEDRODUARTESILVA2017772" class="csl-entry" role="listitem">
+Pedro Duarte Silva, A. 2017. <span>“Optimization Approaches to
+Supervised Classification.”</span> <em>European Journal of Operational
+Research</em> 261 (2): 772–88. https://doi.org/<a href="https://doi.org/10.1016/j.ejor.2017.02.020">https://doi.org/10.1016/j.ejor.2017.02.020</a>.
 </div>
 <div id="ref-prandi2021" class="csl-entry" role="listitem">
 Prandi, Pierre, Benoit Meyssignac, Michaël Ablain, Giorgio Spada,
@@ -403,6 +458,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -629,4 +799,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WinkiH/CASA0023_LearningDiary/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
