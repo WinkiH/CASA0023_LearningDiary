@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -201,7 +220,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a></li>
-  <li><a href="#relfections" id="toc-relfections" class="nav-link" data-scroll-target="#relfections"><span class="header-section-number">8.3</span> Relfections</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">8.3</span> Reflections</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WinkiH/CASA0023_LearningDiary/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -266,11 +285,34 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<p>The success of sub pixel analysis allows human to carry out a more detailed analysis through remote sensing to detect the changes of the environment, somehow providing to solution to remote sensing when it comes into a low-resolution satellite imagery. <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">Peijun DU and CHENG (<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">2014</a>)</span> paper delve into the analysis of land cover change over a medium-/ low-resolution satellite imagery through sub pixel analysis by producing fraction maps for vegetation, high-albedo objects, low-albedo objects, and soil between 2005 and 2009. The relative abundance of specific materials as stated above are shown in a fraction map, revealing the proportion of that particular materials within a single pixel. This provides an enhanced information on land cover over time, to allow better monitoring even with changes in small extent.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="fractionmap"><img src="images/fractionmap.jpeg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Fraction map from subpixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">(<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">Peijun DU and CHENG 2014</a>)</span>.</figcaption>
+</figure>
+</div>
+<p>The merit of sub pixel analysis is that it can detect a small changes even within a single pixel, such as those in “soil” fraction map. It shows a slight changes in the relative abundance of soil pixel between 2005 and 2009 as indicated by a slight brighter (+) and dimmer (-) pixel coloring. This study also incorporated accuracy analysis using overall accuracy assessment and Kappa coefficient to validate the accuracy and reliability of this model.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="accuracy-assessment"><img src="images/accuracyassessment.jpg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Accuracy assessment of the sub pixel analysis <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">(<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">Peijun DU and CHENG 2014</a>)</span>.</figcaption>
+</figure>
+</div>
+<p>However, the drawback of sub pixel analysis the accuracy declines with the increases in data input, where there are loads of mixed pixels that require un-mixing <span class="citation" data-cites="doi:10.1080/01431161.2010.519740">(<a href="references.html#ref-doi:10.1080/01431161.2010.519740" role="doc-biblioref">Demeke Nigussie and Clevers 2011</a>)</span>. The complexity of original image in terms of its mixed pixels has to be low in order to obtain a higher accuracy in sub pixel analysis. Therefore, it is important to bear in mind that we should lower the complexity of the image (number of mixed pixels) as far as we can, to enhance the accuracy of the results.</p>
 </section>
-<section id="relfections" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="relfections"><span class="header-section-number">8.3</span> Relfections</h2>
+<section id="reflections" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">8.3</span> Reflections</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-doi:10.1080/01431161.2010.519740" class="csl-entry" role="listitem">
+Demeke Nigussie, R. Zurita-Milla, and J. G. P. W. Clevers. 2011. <span>“Possibilities and Limitations of Artificial Neural Networks for Subpixel Mapping of Land Cover.”</span> <em>International Journal of Remote Sensing</em> 32 (22): 7203–26. <a href="https://doi.org/10.1080/01431161.2010.519740">https://doi.org/10.1080/01431161.2010.519740</a>.
+</div>
+<div id="ref-doi:10.1080/10095020.2014.889268" class="csl-entry" role="listitem">
+Peijun DU, Pei LIU, Kun TAN, Sicong LIU, and Liang CHENG. 2014. <span>“Sub-Pixel Change Detection for Urban Land-Cover Analysis via Multi-Temporal Remote Sensing Images.”</span> <em>Geo-Spatial Information Science</em> 17 (1): 26–38. <a href="https://doi.org/10.1080/10095020.2014.889268">https://doi.org/10.1080/10095020.2014.889268</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

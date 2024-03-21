@@ -1,6 +1,6 @@
 # Week 3: Corrections and enhancement
 
-## Summary
+## Summary 
 
 Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image introduced by sensor itself (e.g., angle of viewing)/ landscape (e.g., hilly surface)/ atmosphere (e.g., atmospheric scattering of radiation) etc. Enhancement of imagery also allows better interpretation for spatial analysis e.g., identifying features.
 

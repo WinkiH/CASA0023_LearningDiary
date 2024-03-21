@@ -1,56 +1,65 @@
 # Week 7: Classification 2
 
 ## Summary
-As continued from last week, we proceed to classification 2 to extend the discussion to object based and sub-pixel classification. In addition to that, regarding the issue arise from classification models/ methods, this week also covers accuracy assessment and cross-validation methods to enhance the precision of our model result. 
 
-1. Object based image analysis (OBIA)
+As continued from last week, we proceed to classification 2 to extend the discussion to object based and sub-pixel classification. In addition to that, regarding the issue arise from classification models/ methods, this week also covers accuracy assessment and cross-validation methods to enhance the precision of our model result.
 
-    -	Similarity/ homogeneity of raster cell to form superpixels using Simple Linear Iterative Clustering (SLIC)
-    
-    - Based on homogeneity of colours or distance from the centre of pixel
-    
-    -	Obtain the total number of superpixels then averaged the values per object for classification
+1.  Object based image analysis (OBIA)
 
-2. Sub pixel analysis (also known as Spectral Mixture Analysis, SMA)
+    -   Similarity/ homogeneity of raster cell to form superpixels using Simple Linear Iterative Clustering (SLIC)
 
-    - Determines the proportion of landcover per pixel
-    
-    -	Identifies spectrally pure object by comparing to the known material from the spectral library
-    
-3. Accuracy assessment
+    -   Based on homogeneity of colours or distance from the centre of pixel
 
-    - Producer accuracy: how well the producer done through the assessment of vertical classification results
-    
-  
-    -	User accuracy: how well the consumer use through the assessment of horizontal pixels classification
-    
-    -	Overall accuracy: the combined fraction of correctly classified pixels
-    
-    -	True positive: model predicts positive class correctly
-    
-    -	True negative: model predicts negative class correctly
-      
-    -	False positive: model prediction is wrong where it predicts it as positive but it should be negative
-    
-    -	False negative: model prediction is wrong where it predicts is as negative but it should be positive
-    
-    -	Kappa coefficient (categorical or fuzzy matrix): measure the “reliability”, but what is a “good” kappa coefficient?
+    -   Obtain the total number of superpixels then averaged the values per object for classification
 
-4. Cross validation
+2.  Sub pixel analysis (also known as Spectral Mixture Analysis, SMA)
 
-    -	To test and train the model with existing datasets
-    
-    -	Extreme case: leave one out cross validation, use all data except 1 then repeat
-  
-5. Spatial dependence and spatial cross validation
+    -   Determines the proportion of landcover per pixel
 
-    -	Spatial autocorrelation of train and test dataset?
-    
-    -	Spatial partitioning of data
-    
-    -	K-means clustering
+    -   Identifies spectrally pure object by comparing to the known material from the spectral library
+
+3.  Accuracy assessment
+
+    -   Producer accuracy: how well the producer done through the assessment of vertical classification results
+
+    -   User accuracy: how well the consumer use through the assessment of horizontal pixels classification
+
+    -   Overall accuracy: the combined fraction of correctly classified pixels
+
+    -   True positive: model predicts positive class correctly
+
+    -   True negative: model predicts negative class correctly
+
+    -   False positive: model prediction is wrong where it predicts it as positive but it should be negative
+
+    -   False negative: model prediction is wrong where it predicts is as negative but it should be positive
+
+    -   Kappa coefficient (categorical or fuzzy matrix): measure the "reliability", but what is a "good" kappa coefficient?
+
+4.  Cross validation
+
+    -   To test and train the model with existing datasets
+
+    -   Extreme case: leave one out cross validation, use all data except 1 then repeat
+
+5.  Spatial dependence and spatial cross validation
+
+    -   Spatial autocorrelation of train and test dataset?
+
+    -   Spatial partitioning of data
+
+    -   K-means clustering
 
 ## Applications
 
+The success of sub pixel analysis allows human to carry out a more detailed analysis through remote sensing to detect the changes of the environment, somehow providing to solution to remote sensing when it comes into a low-resolution satellite imagery. @doi:10.1080/10095020.2014.889268 paper delve into the analysis of land cover change over a medium-/ low-resolution satellite imagery through sub pixel analysis by producing fraction maps for vegetation, high-albedo objects, low-albedo objects, and soil between 2005 and 2009. The relative abundance of specific materials as stated above are shown in a fraction map, revealing the proportion of that particular materials within a single pixel. This provides an enhanced information on land cover over time, to allow better monitoring even with changes in small extent.
 
-## Relfections
+[![Fraction map from subpixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil [@doi:10.1080/10095020.2014.889268].](images/fractionmap.jpeg)](fractionmap)
+
+The merit of sub pixel analysis is that it can detect a small changes even within a single pixel, such as those in "soil" fraction map. It shows a slight changes in the relative abundance of soil pixel between 2005 and 2009 as indicated by a slight brighter (+) and dimmer (-) pixel coloring. This study also incorporated accuracy analysis using overall accuracy assessment and Kappa coefficient to validate the accuracy and reliability of this model.
+
+[![Accuracy assessment of the sub pixel analysis [@doi:10.1080/10095020.2014.889268].](images/accuracyassessment.jpg)](accuracy-assessment)
+
+However, the drawback of sub pixel analysis the accuracy declines with the increases in data input, where there are loads of mixed pixels that require un-mixing [@doi:10.1080/01431161.2010.519740]. The complexity of original image in terms of its mixed pixels has to be low in order to obtain a higher accuracy in sub pixel analysis. Therefore, it is important to bear in mind that we should lower the complexity of the image (number of mixed pixels) as far as we can, to enhance the accuracy of the results.
+
+## Reflections
