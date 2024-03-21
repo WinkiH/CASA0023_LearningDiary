@@ -46,3 +46,5 @@ The most common usage of GEE is to conduct NDVI analysis and mapping the land co
 However, there are some limitations of GEE. GEE-based image analysis is constrained by the existing tools within the GEE API, GEE algorithms is unique on the Google servers [@9184118]. This means codes over GEE are not reproducible outside GEE platforms. In additions, atmospheric correction algorithms are not advances enough to reduce possible biases or errors [@9184118]. This means the reliability of the finaly products form GEE still remain uncertain when comparing to other platforms. If we considered all of these limitations to the above case study, the case study and findings are only reproducible within GEE platform by using the same tools. Atmospheric correction also hinders the NDVI analysis through the alteration of the ToA.
 
 ## Reflections
+
+GEE is an interesting platform for remote sensing, it is totally different from what I have learnt throughout the past few months or in my undergraduate degree.
