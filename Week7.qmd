@@ -54,11 +54,11 @@ As continued from last week, we proceed to classification 2 to extend the discus
 
 The success of sub pixel analysis allows human to carry out a more detailed analysis through remote sensing to detect the changes of the environment, somehow providing to solution to remote sensing when it comes into a low-resolution satellite imagery. @doi:10.1080/10095020.2014.889268 paper delve into the analysis of land cover change over a medium-/ low-resolution satellite imagery through sub pixel analysis by producing fraction maps for vegetation, high-albedo objects, low-albedo objects, and soil between 2005 and 2009. The relative abundance of specific materials as stated above are shown in a fraction map, revealing the proportion of that particular materials within a single pixel. This provides an enhanced information on land cover over time, to allow better monitoring even with changes in small extent.
 
-[![Fraction map from subpixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil [@doi:10.1080/10095020.2014.889268].](images/fractionmap.jpeg)](fractionmap)
+[![Fraction map from subpixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil .](images/fractionmap.jpeg)](fractionmap)
 
 The merit of sub pixel analysis is that it can detect a small changes even within a single pixel, such as those in "soil" fraction map. It shows a slight changes in the relative abundance of soil pixel between 2005 and 2009 as indicated by a slight brighter (+) and dimmer (-) pixel coloring. This study also incorporated accuracy analysis using overall accuracy assessment and Kappa coefficient to validate the accuracy and reliability of this model.
 
-[![Accuracy assessment of the sub pixel analysis [@doi:10.1080/10095020.2014.889268].](images/accuracyassessment.jpg)](accuracy-assessment)
+[![Accuracy assessment of the sub pixel analysis .](images/accuracyassessment.jpg)](accuracy-assessment)
 
 However, the drawback of sub pixel analysis the accuracy declines with the increases in data input, where there are loads of mixed pixels that require un-mixing [@doi:10.1080/01431161.2010.519740]. The complexity of original image in terms of its mixed pixels has to be low in order to obtain a higher accuracy in sub pixel analysis. Therefore, it is important to bear in mind that we should lower the complexity of the image (number of mixed pixels) as far as we can, to enhance the accuracy of the results.
 

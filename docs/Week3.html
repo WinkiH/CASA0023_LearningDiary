@@ -273,8 +273,8 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <li><p><strong>Orthorectification</strong> correction for image distortions introduced by the view angle of the sensor • Requires geometry and DEMs (elevation model).</p>
 <ul>
 <li><p>Consider the effect of solar azimuth and solar zenith.</p></li>
-<li><p>Solar azimuth:</p></li>
-<li><p>Solar zenith:</p></li>
+<li><p>Solar azimuth: compass angle of the sun at sunrise and sunset</p></li>
+<li><p>Solar zenith: angle of local zenith and sun (vertical)</p></li>
 </ul></li>
 <li><p><strong>Radiometric Calibration</strong> for transforming image brightness from Digital Number (DN) to spectral radiance</p>
 <ul>
@@ -314,14 +314,16 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="oklahoma-NDVI-NDWI"><img src="images/NDVINDWI.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Changes in NDVI and NDWI in the study area across time .</figcaption>
+<figcaption class="figure-caption">Changes in NDVI and NDWI in the study area across time <span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>.</figcaption>
 </figure>
 </div>
 <p>NDVI is useful in revealing the spatial distribution and density of vegetation cover, a higher index reflects a denser vegetation cover. NDVI is also useful for temporal analysis for the changes of vegetation cover over time, a decrease in NDVI indicates a reduction in vegetation and vice versa for an increase in NDVI <span class="citation" data-cites="Othman2018">(<a href="references.html#ref-Othman2018" role="doc-biblioref">Othman et al. 2018</a>)</span>. However, the above study shows that NDVI never gone down to 0 throughout the study even NDWI went down drastically in August 2006. This can possibly be explained by 1). plants could be drought resistant 2). plants are able to regulate their water consumption pattern to sustain their growth <span class="citation" data-cites="doi:10.1126/science.aaz7614">(<a href="references.html#ref-doi:10.1126/science.aaz7614" role="doc-biblioref">Gupta, Rico-Medina, and Ana I. Caño-Delgado 2020</a>)</span>.</p>
-<p>NDWI is useful in monitoring changes of water content on land or along the coast. NDWI temporal analysis also allows us to understand the moisture content or changes in the extent of water body <span class="citation" data-cites="MEMON201599">(<a href="references.html#ref-MEMON201599" role="doc-biblioref">Memon et al. 2015</a>)</span>. If NDWI remains low for a long time such as from December 2005 to April 2006 in the above study, it is more likely that Oklahoma was experiencing drought/ water content remained low at all times. Sample equation for obtaining NDWI is <span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>: <span class="math display">\[NDWI= \frac{G-NIR}{G+NIR}\]</span></p>
+<p>NDWI is useful in monitoring changes of water content on land or along the coast. NDWI temporal analysis also allows us to understand the moisture content or changes in the extent of water body. If NDWI remains low for a long time such as from December 2005 to April 2006 in the above study, it is more likely that Oklahoma was experiencing drought/ water content remained low at all times. Sample equation for obtaining NDWI is <span class="citation" data-cites="https://doi.org/10.1029/2008GL035772">(<a href="references.html#ref-https://doi.org/10.1029/2008GL035772" role="doc-biblioref">Gu et al. 2008</a>)</span>: <span class="math display">\[NDWI= \frac{G-NIR}{G+NIR}\]</span></p>
 </section>
 <section id="reflections" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">4.3</span> Reflections</h2>
+<p>I am going to be very honest about my understanding towards corrections before this lecture, which is I literally have no idea that remotely sensed satellite imagery needs corrections. I think that’s because most of the products have already gone through corrections before it is available to the public. I was quite amazed by how much pre-processing that we/ product provider has to gone through before the product is ready for analysis. Although we don’t have to go through the correction part (at most of the time), I think it is quite useful in understanding how those mechanisms work just in case we are having some “raw” data in hand. This enables us to scratch the data from the beginning for analysis, if needed.</p>
+<p>As for image enhancement, I really enjoyed the part of “ratioing” – NDVI, NDWI, NDBI etc. I think this is an extension from lecture 1 that we are introduced with different bands in satellite imagery, we are now comparing different bands within a satellite imagery to obtain the information e.g., land cover. How interesting!!! We can obtain information of land cover by just calculating the ratio between bands. Ratioing is very useful in remote sensing in both spatial and temporal sense as changes in indices reveal the changes in land cover e.g., changes in NDVI = changes in the extent of water body. I find it quite easy to understand the concept behind, as long as I am very clear about the meaning of different bands.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -333,9 +335,6 @@ Gupta, Aditi, Andrés Rico-Medina, and Ana I. Caño-Delgado. 2020. <span>“The 
 </div>
 <div id="ref-https://doi.org/10.1111/nph.12952" class="csl-entry" role="listitem">
 He, Mingzhu, and Feike A. Dijkstra. 2014. <span>“Drought Effect on Plant Nitrogen and Phosphorus: A Meta-Analysis.”</span> <em>New Phytologist</em> 204 (4): 924–31. https://doi.org/<a href="https://doi.org/10.1111/nph.12952">https://doi.org/10.1111/nph.12952</a>.
-</div>
-<div id="ref-MEMON201599" class="csl-entry" role="listitem">
-Memon, Akhtar Ali, Sher Muhammad, Said Rahman, and Mateeul Haq. 2015. <span>“Flood Monitoring and Damage Assessment Using Water Indices: A Case Study of Pakistan Flood-2012.”</span> <em>The Egyptian Journal of Remote Sensing and Space Science</em> 18 (1): 99–106. https://doi.org/<a href="https://doi.org/10.1016/j.ejrs.2015.03.003">https://doi.org/10.1016/j.ejrs.2015.03.003</a>.
 </div>
 <div id="ref-Othman2018" class="csl-entry" role="listitem">
 Othman, M A, Z H Ash’aari, A Z Aris, and M F Ramli. 2018. <span>“Tropical Deforestation Monitoring Using NDVI from MODIS Satellite: A Case Study in Pahang, Malaysia.”</span> <em>IOP Conference Series: Earth and Environmental Science</em> 169 (1): 012047. <a href="https://doi.org/10.1088/1755-1315/169/1/012047">https://doi.org/10.1088/1755-1315/169/1/012047</a>.

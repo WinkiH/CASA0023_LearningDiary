@@ -1,6 +1,6 @@
 # Week 3: Corrections and enhancement
 
-## Summary 
+## Summary
 
 Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image introduced by sensor itself (e.g., angle of viewing)/ landscape (e.g., hilly surface)/ atmosphere (e.g., atmospheric scattering of radiation) etc. Enhancement of imagery also allows better interpretation for spatial analysis e.g., identifying features.
 
@@ -30,9 +30,9 @@ Remote sensing often requires corrections or sometimes requires enhancement to o
 
     -   Consider the effect of solar azimuth and solar zenith.
 
-    -   Solar azimuth:
+    -   Solar azimuth: compass angle of the sun at sunrise and sunset
 
-    -   Solar zenith:
+    -   Solar zenith: angle of local zenith and sun (vertical)
 
 4.  **Radiometric Calibration** for transforming image brightness from Digital Number (DN) to spectral radiance
 
@@ -65,10 +65,14 @@ Remote sensing often requires corrections or sometimes requires enhancement to o
 
 This week I am going to explore the usefulness of band ratioing in monitoring vegetation drought in Oklahoma Mesonet, the USA, by using NDVI (Normalised Differences Vegetation Index) and NDWI (Normalised Differences Water Index)[@https://doi.org/10.1029/2008GL035772]. The authors presented temporal analysis of changes in vegetation density and soil moisture (water content in soil) by comparing the changes of NDVI and NWVI across the time series. Changes in NDVI are in line with changes in NDWI as reflected by the same periodic changes in NDVI and NDWI. This implies that the density of vegetation is dependent upon the availability of water supply, which it is true that water is essential for sustaining vegetation growth [@https://doi.org/10.1111/nph.12952].
 
-[![Changes in NDVI and NDWI in the study area across time .](images/NDVINDWI.png){fig-align="center"}](oklahoma-NDVI-NDWI)
+[![Changes in NDVI and NDWI in the study area across time [@https://doi.org/10.1029/2008GL035772].](images/NDVINDWI.png){fig-align="center"}](oklahoma-NDVI-NDWI)
 
 NDVI is useful in revealing the spatial distribution and density of vegetation cover, a higher index reflects a denser vegetation cover. NDVI is also useful for temporal analysis for the changes of vegetation cover over time, a decrease in NDVI indicates a reduction in vegetation and vice versa for an increase in NDVI [@Othman2018]. However, the above study shows that NDVI never gone down to 0 throughout the study even NDWI went down drastically in August 2006. This can possibly be explained by 1). plants could be drought resistant 2). plants are able to regulate their water consumption pattern to sustain their growth [@doi:10.1126/science.aaz7614].
 
-NDWI is useful in monitoring changes of water content on land or along the coast. NDWI temporal analysis also allows us to understand the moisture content or changes in the extent of water body [@MEMON201599]. If NDWI remains low for a long time such as from December 2005 to April 2006 in the above study, it is more likely that Oklahoma was experiencing drought/ water content remained low at all times. Sample equation for obtaining NDWI is [@https://doi.org/10.1029/2008GL035772]: $$NDWI= \frac{G-NIR}{G+NIR}$$
+NDWI is useful in monitoring changes of water content on land or along the coast. NDWI temporal analysis also allows us to understand the moisture content or changes in the extent of water body. If NDWI remains low for a long time such as from December 2005 to April 2006 in the above study, it is more likely that Oklahoma was experiencing drought/ water content remained low at all times. Sample equation for obtaining NDWI is [@https://doi.org/10.1029/2008GL035772]: $$NDWI= \frac{G-NIR}{G+NIR}$$
 
 ## Reflections
+
+I am going to be very honest about my understanding towards corrections before this lecture, which is I literally have no idea that remotely sensed satellite imagery needs corrections. I think that's because most of the products have already gone through corrections before it is available to the public. I was quite amazed by how much pre-processing that we/ product provider has to gone through before the product is ready for analysis. Although we don't have to go through the correction part (at most of the time), I think it is quite useful in understanding how those mechanisms work just in case we are having some "raw" data in hand. This enables us to scratch the data from the beginning for analysis, if needed.
+
+As for image enhancement, I really enjoyed the part of "ratioing" -- NDVI, NDWI, NDBI etc. I think this is an extension from lecture 1 that we are introduced with different bands in satellite imagery, we are now comparing different bands within a satellite imagery to obtain the information e.g., land cover. How interesting!!! We can obtain information of land cover by just calculating the ratio between bands. Ratioing is very useful in remote sensing in both spatial and temporal sense as changes in indices reveal the changes in land cover e.g., changes in NDVI = changes in the extent of water body. I find it quite easy to understand the concept behind, as long as I am very clear about the meaning of different bands.
