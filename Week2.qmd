@@ -1,6 +1,6 @@
 # Week 2: Xaringan
 
-This week we have learnt to create our online portfolio using Quarto Book and presentation slides using Xaringan. Below please find my presentation \^\^
+This week we have learnt to create our online portfolio using Quarto Book and presentation slides using Xaringan. Below please find my Xaringan presentation on IceSat-2 satellite mission hope you'll enjoy it!
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
