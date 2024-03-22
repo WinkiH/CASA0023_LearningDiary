@@ -6,7 +6,7 @@
 
 Synthetic Aperture Radar -- SAR is an active sensor that its bands are able to pass through clouds and reaching the ground/ target surface, disregarding the weather condition e.g., percentage of cloud covers during the sensing date. It has a total of 8 bands that are tailored for different applications, its wavelength also has their own frequencies so that they would not be disturbed by other sensors. It is important to note that *calm* water usually appears dark in the SAR image as they reflect the energy pulses away from sensor (pulses cannot be reflected back to the sensor).
 
-[![Wavelength of different bands in SAR](images/SARwavelength.png)](SAR-wavelength)
+![Wavelength of different bands in SAR](images/SARwavelength.png)
 
 ### Polarisation
 
@@ -20,7 +20,7 @@ SAR detects both vertical (V) and horizontal (H) transmission as different surfa
 
 Here it is also important to note *rough* water surface e.g., wavy during windy time or tsunami can reflect pules back through VV transmission.
 
-[![Graph showing different polarisation from different objects.](images/SARPolarization.jpg)](SAR-polarisation)
+![Graph showing different polarisation from different objects.](images/SARPolarization.jpg)
 
 ### SAR techniques
 
@@ -36,11 +36,11 @@ Here it is also important to note *rough* water surface e.g., wavy during windy 
 
 As mentioned above, SAR images are useful in detecting land motion (uplift or subsidence), therefore, I have chosen a case study of detecting vertical land motion -- land deformation along the Houston-Galveston region in Texas, the USA [@QU2015290]. The Houston-Galveston is vulnerable to land subsidence due to its natural lithology -- compaction of fine-grained sediments e.g., clay and silt AND human influence -- groundwater extraction that led to compaction of soil [@usgs]. The authors compare SAR images from ERS-1/2 ENVISAT SARs and ALOS POLSAR across different timescale, to perform multi-temporal -- PS-InSAR analysis [@QU2015290]. For spatial analysis, interferogram and choropleths map is produced to identify regions that are subjected to intense vertical land movement -- land subsidence. This provides an insight to the audience of areas that are prone to land subsidence, to address the urgency in mitigating local land subsidence e.g., through policy regulations or hard engineering methods [@piahs-382-809-2020].
 
-[![Spatial deformation map in Huston-Galveston using InSAR techniques. a). ERS b). Envisat c). ALOS .](images/Huston_spatial.jpg)](huston-spatial)
+![Spatial deformation map in Huston-Galveston using InSAR techniques. a). ERS b). Envisat c). ALOS [@QU2015290].](images/Huston_spatial.jpg)
 
 For temporal analysis, the authors demonstrate the changes of land elevation across (more than) 32 years. This provides a comprehensive overview of changes land subsidence rates across the trend, enabling the audience to identify the significance of land subsidence to the local region across time.
 
-[![Land subsidence across time series for at least 32 years (temporal analysis) in Huston-Galveston using InSAR techniques .](images/huston_temporal.jpg)](Huston-temporal)
+![Land subsidence across time series for at least 32 years (temporal analysis) in Huston-Galveston using InSAR techniques [@QU2015290].](images/huston_temporal.jpg)
 
 The merits of @QU2015290 papers are they also conducted analysis on the possible contributing factors of land subsidence e.g., hydrologic settings (changes in channel characteristics in Huston-Galveston), fault systems, and lithological settings (soil profile). This allows the analysis of causal relationship between the physical settings and land subsidence. However, the limitation of this paper falls on the omission of human influence to land subsidence. The high-resolution-SAR images would undoubtedly be beneficial for identifying the changes in spatial distribution of water body e.g., enhanced coastal floodings due to land subsidence [@navarro-hernández2023]. The utilisation of SAR imagery in this papers leaves room for improvements.  
 

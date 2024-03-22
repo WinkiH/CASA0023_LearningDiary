@@ -53,7 +53,7 @@ Remote sensing often requires corrections or sometimes requires enhancement to o
     -   Sample equation for obtaining NDVI: $$NDVI= \frac{NIR-Red}{NIR+Red}$$
     -   Sample work of NDVI from my practical -- looking at the differences in NDVI between cities (Seoul) and rural area (Jeju Island) in South Korea.
 
-[![My practical work focusing on the use of NDVI in exploring vegetation cover, the higher the index the denser the vegetation cover. Clear differences in NDVI is shown between Seoul on the left (a highly urbanised city) and Jeju Island on the right (a rural island).](images/NDVI.jpg){fig-align="center"}](NDVI-Korea)
+![My practical work focusing on the use of NDVI in exploring vegetation cover, the higher the index the denser the vegetation cover. Clear differences in NDVI is shown between Seoul on the left (a highly urbanised city) and Jeju Island on the right (a rural island).](images/NDVI.jpg){fig-align="center"}
 
 5.  **Principal Component Analysis (PCA):** the transformation of original data to a new one for dimensionality reduction, from multi-spectral data to uncorrelated/ smaller dataset.
 
@@ -65,7 +65,7 @@ Remote sensing often requires corrections or sometimes requires enhancement to o
 
 This week I am going to explore the usefulness of band ratioing in monitoring vegetation drought in Oklahoma Mesonet, the USA, by using NDVI (Normalised Differences Vegetation Index) and NDWI (Normalised Differences Water Index)[@https://doi.org/10.1029/2008GL035772]. The authors presented temporal analysis of changes in vegetation density and soil moisture (water content in soil) by comparing the changes of NDVI and NWVI across the time series. Changes in NDVI are in line with changes in NDWI as reflected by the same periodic changes in NDVI and NDWI. This implies that the density of vegetation is dependent upon the availability of water supply, which it is true that water is essential for sustaining vegetation growth [@https://doi.org/10.1111/nph.12952].
 
-[![Changes in NDVI and NDWI in the study area across time [@https://doi.org/10.1029/2008GL035772].](images/NDVINDWI.png){fig-align="center"}](oklahoma-NDVI-NDWI)
+![Changes in NDVI and NDWI in the study area across time [@https://doi.org/10.1029/2008GL035772].](images/NDVINDWI.png){fig-align="center"}
 
 NDVI is useful in revealing the spatial distribution and density of vegetation cover, a higher index reflects a denser vegetation cover. NDVI is also useful for temporal analysis for the changes of vegetation cover over time, a decrease in NDVI indicates a reduction in vegetation and vice versa for an increase in NDVI [@Othman2018]. However, the above study shows that NDVI never gone down to 0 throughout the study even NDWI went down drastically in August 2006. This can possibly be explained by 1). plants could be drought resistant 2). plants are able to regulate their water consumption pattern to sustain their growth [@doi:10.1126/science.aaz7614].
 
