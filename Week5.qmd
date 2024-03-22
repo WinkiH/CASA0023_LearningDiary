@@ -4,7 +4,7 @@
 
 Google Earth Engine (GEE) is another geospatial analysis platform for loading, processing, and analysing satellite imagery. GEE is quite different from other geospatial analysis platform. GEE itself contains a gallery of satellite imagery, imageries are stored on the server where users can directly load the imagery onlin without downloading. The big difference to another geospatial analysis tools e.g., SNAP, R Studio, or QGIS is that GEE is a server-side cloud-based machine. GEE runs on Google cloud-based server rather than local client-side machine; therefore, its performance is not impacted by the performance of local machines. In other words, the performance on GEE is not restricted by the processor speed, RAM, and storage capability. GEE can process large datasets at a very high speed using the data processors on the server-side. Another difference is that GEE uses different programming language, here we us JavaScript rather than Python. The advantage of using JavaScript is that the user (we) can see the output codes immediately after execution. Satellite imagery can be resampled into different scales, usually refers to down sampling or reducing images. Image can be reduced by region or neighbourhood.
 
-![Google Earth Engine users\' interface \-- JavaScript API, showing the features for workflow [@google].](images/GEE_interface.png)
+![Google Earth Engine users' interface \-- JavaScript API, showing the features for workflow [@google].](images/GEE_interface.png)
 
 ### Terms
 

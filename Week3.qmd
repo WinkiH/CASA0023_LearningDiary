@@ -4,62 +4,58 @@
 
 Remote sensing often requires corrections or sometimes requires enhancement to overcome the flaws of the original image introduced by sensor itself (e.g., angle of viewing)/ landscape (e.g., hilly surface)/ atmosphere (e.g., atmospheric scattering of radiation) etc. Enhancement of imagery also allows better interpretation for spatial analysis e.g., identifying features.
 
-### Key Terms: Corrections
+### Corrections
 
-1.  **Geometric corrections** for image distortions introduced by physical factors e.g., sensor/ landscape itself
+1.  Geometric corrections
 
+    -   For image distortions introduced by physical factors e.g., sensor/ landscape itself
     -   Ground Control Points (GCPs) from local map or handheld devices needed to match the known points (of the image) to a location-referenced dataset.
-
     -   Geometric transformation algorithms to obtain RMSE (root-mean-squared-error), the lower the better \~0.5.
-
     -   More GCPs are required in order to lower the RMSE.
-
     -   Resample the raster layer.
 
-2.  **Atmospheric corrections** for image distortions introduced by atmosphere e.g., atmospheric scattering and topographic attenuation
+2.  Atmospheric corrections
 
+    -   For image distortions introduced by atmosphere e.g., atmospheric scattering and topographic attenuation
     -   Necessary for measuring biophysical parameters e.g., NDVI (Normalised Difference Vegetation Index).
-
     -   Relative VS Absolute.
-
     -   Relative: the use of Dark Object Subtraction (DOS) or Pseudo-invariant Features (PIFs) to normalise relative to different bands within an image OR relative to different dates.
-
     -   Absolute: requires empirical data e.g., atmospheric model and local atmospheric visibility to scale up surface reflectance.
 
-3.  **Orthorectification** correction for image distortions introduced by the view angle of the sensor • Requires geometry and DEMs (elevation model).
+3.  Orthorectification corrections
 
+    -   For image distortions introduced by the view angle of the sensor
+    -   Requires geometry and DEMs (elevation model).
     -   Consider the effect of solar azimuth and solar zenith.
-
     -   Solar azimuth: compass angle of the sun at sunrise and sunset
-
     -   Solar zenith: angle of local zenith and sun (vertical)
 
-4.  **Radiometric Calibration** for transforming image brightness from Digital Number (DN) to spectral radiance
+4.  Radiometric Calibration
 
+    -   For transforming image brightness from Digital Number (DN) to spectral radiance
     -   Sensors only able to capture image brightness and stored as DN.
-
     -   Calibrated in a lab before launching the sensor.
 
-### Key terms: enhancement
+### Enhancement
 
-1.  **Digital Number (DN):** in a form of binary integer (bits) that requires transformation, represents the intensities (brightness) of a pixel.
-
-2.  **Radiance/ Top of Atmosphere (TOA) radiance:** the amount of light that a sensor receives through reflectance from an object, with a unit of watt.
-
-3.  **(Surface) Reflectance:** property of a material being observed, dependent on light source (requires illuminating source for reflection to take place)./ **TOA reflectance:** converted from TOA radiance.
-
-4.  **Band Ratioing:** (for DN values in different bands), to compare DN values in different bands to identify certain features e.g., NDVI for vegetation cover (Normalised Difference Vegetation Index, to be discussed in the applications part).
-
-    -   Sample equation for obtaining NDVI: $$NDVI= \frac{NIR-Red}{NIR+Red}$$
-    -   Sample work of NDVI from my practical -- looking at the differences in NDVI between cities (Seoul) and rural area (Jeju Island) in South Korea.
+1.  Digital Number (DN):
+    -   In a form of binary integer (bits) that requires transformation, represents the intensities (brightness) of a pixel.
+2.  Radiance/ Top of Atmosphere (TOA) radiance:
+    -   The amount of light that a sensor receives through reflectance from an object, with a unit of watt.
+3.  Reflectance/ TOA Reflectance:
+    -   Property of a material being observed, dependent on light source (requires illuminating source for reflection to take place).
+4.  Band Ratioing:
+    -   To compare DN values in different bands to identify certain features e.g., NDVI for vegetation cover (Normalised Difference Vegetation Index, to be discussed in the applications part).
+    -   Equation for obtaining NDVI: $$NDVI= \frac{NIR-Red}{NIR+Red}$$
 
 ![My practical work focusing on the use of NDVI in exploring vegetation cover, the higher the index the denser the vegetation cover. Clear differences in NDVI is shown between Seoul on the left (a highly urbanised city) and Jeju Island on the right (a rural island).](images/NDVI.jpg){fig-align="center"}
 
-5.  **Principal Component Analysis (PCA):** the transformation of original data to a new one for dimensionality reduction, from multi-spectral data to uncorrelated/ smaller dataset.
-
-6.  **Texture:** captures the spatial distribution of grey values.
-
-7.  **Fusion:** combining data from different (multiple) sources into one.
+5.  Principal Component Analysis (PCA):
+    -   The transformation of original data to a new one for dimensionality reduction, from multi-spectral data to uncorrelated/ smaller dataset.
+6.  Texture:
+    -   Captures the spatial distribution of grey values.
+7.  Fusion:
+    -   Combining data from different (multiple) sources into one.
 
 ## Applications
 

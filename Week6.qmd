@@ -9,37 +9,27 @@ Classification in remote sensing is a process that pixels in a remote sensing im
 -   Inductive learning -- Expert Systems
 
     -   Expert user to train the model, requires human knowledge/ intelligence to solve problems
-
     -   Using decision tree for knowledge representation (form human)
 
 -   Machine learning
 
     -   Without human interference, just machine itself to learn
-
     -   **CART:** classification and regression trees
-
     -   **Random Forests:** numerous classification decision trees, Bootstrapping (out of bag sample, OOB), random and limited control on development
 
 -   Image classification
 
     -   **Supervised:** inductive learning, data testing + training, parameter settings, pixels are treated in isolation: contextual, objects, texture
-
     -   **Unsupervised:** computer to cluster based on the info and characteristics, the use of DBSCAN, cluster busting
-
     -   **Support Vector Machines (SVM):** a supervised machine learning model, identifying the optimal hyperplane to distinguish points with different classes
 
 ### A deep dive into CART
 
 -   Classification trees + Regression trees = CART
-
 -   Gini Impurity: leaf with the lowest Gini Impurities wins = pure (pixels belong to the same class, no mixture of classes)
-
 -   Classification trees: classify data into discrete classes
-
 -   Regression trees: to decide where to subset the data, requires the calculation of sum of squared residuals (SSR), presented in numeric value not discrete classes
-
 -   Problems: **overfitting** with high variance and low bias
-
 -   Solutions: **weakest link pruning** or removing the weakest part of the model
 
 ## Application

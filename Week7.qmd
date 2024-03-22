@@ -7,47 +7,34 @@ As continued from last week, we proceed to classification 2 to extend the discus
 1.  Object based image analysis (OBIA)
 
     -   Similarity/ homogeneity of raster cell to form superpixels using Simple Linear Iterative Clustering (SLIC)
-
     -   Based on homogeneity of colours or distance from the centre of pixel
-
     -   Obtain the total number of superpixels then averaged the values per object for classification
 
 2.  Sub pixel analysis (also known as Spectral Mixture Analysis, SMA)
 
     -   Determines the proportion of landcover per pixel
-
     -   Identifies spectrally pure object by comparing to the known material from the spectral library
 
 3.  Accuracy assessment
 
     -   Producer accuracy: how well the producer done through the assessment of vertical classification results
-
     -   User accuracy: how well the consumer use through the assessment of horizontal pixels classification
-
     -   Overall accuracy: the combined fraction of correctly classified pixels
-
     -   True positive: model predicts positive class correctly
-
     -   True negative: model predicts negative class correctly
-
     -   False positive: model prediction is wrong where it predicts it as positive but it should be negative
-
     -   False negative: model prediction is wrong where it predicts is as negative but it should be positive
-
     -   Kappa coefficient (categorical or fuzzy matrix): measure the "reliability", but what is a "good" kappa coefficient?
 
 4.  Cross validation
 
     -   To test and train the model with existing datasets
-
     -   Extreme case: leave one out cross validation, use all data except 1 then repeat
 
 5.  Spatial dependence and spatial cross validation
 
     -   Spatial autocorrelation of train and test dataset?
-
     -   Spatial partitioning of data
-
     -   K-means clustering
 
 ## Applications
