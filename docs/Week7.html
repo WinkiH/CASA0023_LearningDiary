@@ -136,7 +136,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">About me</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">About</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -239,9 +239,9 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <li>Based on homogeneity of colours or distance from the centre of pixel</li>
 <li>Obtain the total number of superpixels then averaged the values per object for classification</li>
 </ul></li>
-<li><p>Sub pixel analysis (also known as Spectral Mixture Analysis, SMA)</p>
+<li><p>Sub-pixel analysis (also known as Spectral Mixture Analysis, SMA)</p>
 <ul>
-<li>Determines the proportion of landcover per pixel</li>
+<li>Determines the proportion of land cover per pixel</li>
 <li>Identifies spectrally pure object by comparing to the known material from the spectral library</li>
 </ul></li>
 <li><p>Accuracy assessment</p>
@@ -257,12 +257,12 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </ul></li>
 <li><p>Cross validation</p>
 <ul>
-<li>To test and train the model with existing datasets</li>
+<li>To test and train the model with existing data sets</li>
 <li>Extreme case: leave one out cross validation, use all data except 1 then repeat</li>
 </ul></li>
 <li><p>Spatial dependence and spatial cross validation</p>
 <ul>
-<li>Spatial autocorrelation of train and test dataset?</li>
+<li>Spatial autocorrelation of train and test data set?</li>
 <li>Spatial partitioning of data</li>
 <li>K-means clustering</li>
 </ul></li>
@@ -270,25 +270,25 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
-<p>The success of sub pixel analysis allows human to carry out a more detailed analysis through remote sensing to detect the changes of the environment, somehow providing to solution to remote sensing when it comes into a low-resolution satellite imagery. <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">Peijun DU and CHENG (<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">2014</a>)</span> paper delve into the analysis of land cover change over a medium-/ low-resolution satellite imagery through sub pixel analysis by producing fraction maps for vegetation, high-albedo objects, low-albedo objects, and soil between 2005 and 2009. The relative abundance of specific materials as stated above are shown in a fraction map, revealing the proportion of that particular materials within a single pixel. This provides an enhanced information on land cover over time, to allow better monitoring even with changes in small extent.</p>
+<p>The success of sub-pixel analysis allows humans to carry out a more detailed analysis through remote sensing to detect the changes in the environment, somehow providing to solution to remote sensing when it comes to low-resolution satellite imagery. <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">Peijun DU and CHENG (<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">2014</a>)</span> paper delves into the analysis of land cover change over a medium-/ low-resolution satellite imagery through sub-pixel analysis by producing fraction maps for vegetation, high-albedo objects, low-albedo objects, and soil between 2005 and 2009. The relative abundance of specific materials as stated above is shown in a fraction map, revealing the proportion of those particular materials within a single pixel. This provides enhanced information on land cover over time, to allow better monitoring even with changes to a small extent.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fractionmap.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fraction map from subpixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">(<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">Peijun DU and CHENG 2014</a>)</span>.</figcaption>
+<figcaption class="figure-caption">Fraction map from sub-pixel analysis showing the changes in land cover between 2005 (a-d) and 2009 (e-f). From left to right are: vegetation, high-albedo objects, low-albedo objects, soil <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">(<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">Peijun DU and CHENG 2014</a>)</span>.</figcaption>
 </figure>
 </div>
-<p>The merit of sub pixel analysis is that it can detect a small changes even within a single pixel, such as those in “soil” fraction map. It shows a slight changes in the relative abundance of soil pixel between 2005 and 2009 as indicated by a slight brighter (+) and dimmer (-) pixel coloring. This study also incorporated accuracy analysis using overall accuracy assessment and Kappa coefficient to validate the accuracy and reliability of this model.</p>
+<p>The merit of sub-pixel analysis is that it can detect a small changes even within a single pixel, such as those in “soil” fraction map. It shows a slight changes in the relative abundance of soil pixel between 2005 and 2009 as indicated by a slight brighter (+) and dimmer (-) pixel coloring. This study also incorporated accuracy analysis using overall accuracy assessment and Kappa coefficient to validate the accuracy and reliability of this model.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/accuracyassessment.jpg" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Accuracy assessment of the sub pixel analysis <span class="citation" data-cites="doi:10.1080/10095020.2014.889268">(<a href="references.html#ref-doi:10.1080/10095020.2014.889268" role="doc-biblioref">Peijun DU and CHENG 2014</a>)</span>.</figcaption>
 </figure>
 </div>
-<p>However, the drawback of sub pixel analysis the accuracy declines with the increases in data input, where there are loads of mixed pixels that require un-mixing <span class="citation" data-cites="doi:10.1080/01431161.2010.519740">(<a href="references.html#ref-doi:10.1080/01431161.2010.519740" role="doc-biblioref">Demeke Nigussie and Clevers 2011</a>)</span>. The complexity of original image in terms of its mixed pixels has to be low in order to obtain a higher accuracy in sub pixel analysis. Therefore, it is important to bear in mind that we should lower the complexity of the image (number of mixed pixels) as far as we can, to enhance the accuracy of the results.</p>
+<p>However, the drawback of sub-pixel analysis the accuracy declines with the increases in data input, where there are loads of mixed pixels that require un-mixing <span class="citation" data-cites="doi:10.1080/01431161.2010.519740">(<a href="references.html#ref-doi:10.1080/01431161.2010.519740" role="doc-biblioref">Demeke Nigussie and Clevers 2011</a>)</span>. The complexity of the original image in terms of its mixed pixels has to be low in order to obtain a higher accuracy in sub-pixel analysis. Therefore, it is important to bear in mind that we should lower the complexity of the image (number of mixed pixels) as far as we can, to enhance the accuracy of the results.</p>
 </section>
 <section id="reflections" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">8.3</span> Reflections</h2>
-<p>As continue from last week classification, this week seems to be much more easier although it is still – complicated. The OBIA and sub pixel analysis is still fine for me as it is quite straightforward in terms of their concepts, accuracy assessment is where the complexity of information and concept being drawn in. It is fascinating there is no definite answer on how should a “good” accuracy assessment looks like as mentioned in the presentation “there is no single right choice for accuracy measurement”. This means we have to justify our choices for accuracy assessment accordingly and wisely. This is where I realised the most important part in building a machine learning model is not simply focusing on justifying how the model should be built, but also how should we validate our model through performing a series of accuracy assessment. If we failed to do to, model accuracy would become a limitations of our study, making our results not reliable.</p>
+<p>As continues from last week’s classification, this week seems to be much easier although it is still – complicated. The OBIA and sub-pixel analysis are still fine for me as it is quite straightforward in terms of their concepts, accuracy assessment is where the complexity of information and concept is drawn in. It is fascinating there is no definite answer on what should a “good” accuracy assessment looks like as mentioned in the presentation “there is no single right choice for accuracy measurement”. This means we have to justify our choices for accuracy assessment accordingly and wisely. This is where I realised the most important part of building a machine learning model is not simply focusing on justifying how the model should be built, but also how should we validate our model through performing a series of accuracy assessments. If we failed to do so, model accuracy would become a limitation of our study, making our results not reliable.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
