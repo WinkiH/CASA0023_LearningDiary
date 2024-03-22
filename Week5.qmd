@@ -4,7 +4,7 @@
 
 Google Earth Engine (GEE) is another geospatial analysis platform for loading, processing, and analysing satellite imagery. GEE is quite different from other geospatial analysis platform. GEE itself contains a gallery of satellite imagery, imageries are stored on the server where users can directly load the imagery onlin without downloading. The big difference to another geospatial analysis tools e.g., SNAP, R Studio, or QGIS is that GEE is a server-side cloud-based machine. GEE runs on Google cloud-based server rather than local client-side machine; therefore, its performance is not impacted by the performance of local machines. In other words, the performance on GEE is not restricted by the processor speed, RAM, and storage capability. GEE can process large datasets at a very high speed using the data processors on the server-side. Another difference is that GEE uses different programming language, here we us JavaScript rather than Python. The advantage of using JavaScript is that the user (we) can see the output codes immediately after execution. Satellite imagery can be resampled into different scales, usually refers to down sampling or reducing images. Image can be reduced by region or neighbourhood.
 
-[![Google Earth Engine users\' interface \-- JavaScript API, showing the features for workflow.](images/GEE_interface.png)](GEE-interface)
+![Google Earth Engine users\' interface \-- JavaScript API, showing the features for workflow [@google].](images/GEE_interface.png)
 
 ### Terms
 
@@ -47,4 +47,4 @@ However, there are some limitations of GEE. GEE-based image analysis is constrai
 
 ## Reflections
 
-GEE is an interesting platform for remote sensing, it is totally different from what I have learnt throughout the past few months or in my undergraduate degree.
+GEE is an interesting platform for remote sensing, it is totally different from what I have learnt throughout the past few months or in my undergraduate degree. I think GEE is quite useful when comparing changes through time e.g., when conducting a multi-temporal spatial analysis as the GEE platform has all of the imagery (data sets) ready in its gallery, and we (the users) just have to filter them accordingly (our dates of interests and specific location) then it's ready for data processing! I have had a good user-experience with GEE so far, although I ran into troubles sometimes. The wide range of products available on the GEE gallery also provides handy and extensive resources for users ready for analysis e.g., from Landsat/ Sentinel to spatial distribution of pollutants e.g., carbon monoxide and ozone. In addition to that, we don't have to downloads multiple data sets, it saves a lot of time, efforts, and memory space for data loading. I found it quite user-friendly, it is convenient to use. Overall, I would say GEE is convenient to use and having a high efficiency in data processing.
