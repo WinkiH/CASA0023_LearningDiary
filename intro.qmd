@@ -44,7 +44,7 @@ With the rapid development of technologies and the availability of open-source d
 
 Prior to the availability of satellite altimetry measurements of sea-level change, the only way to monitor sea-level change was using in-situ tide gauge along the coast. The limitations of using tide gauge is the spatial coverage of sea-level monitoring, it's limited to coastal regions not open sea, and the uneven global distributions of tide gauge stations -- more in the global north than global south [@beenstock2015].
 
-![Map showing the distributions of in-situ tide gauges (black dots) and the coverage of satellite altimetry measurements by Jason-3](images/tides_jsn_psmsl_2020.png)
+![Map showing the distributions of in-situ tide gauges (black dots) and the coverage of satellite altimetry measurements by Jason-3 [@earthobservatory2020].](images/tides_jsn_psmsl_2020.png)
 
 ### High-precision satellite altimetry era
 
