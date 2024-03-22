@@ -63,11 +63,11 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -95,34 +95,10 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/casa_logo.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CASA0023 Learning Diary</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-</ul>
-            <div class="quarto-navbar-tools">
-    <a href="https://github.com/WinkiH/CASA0023_LearningDiary" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -138,9 +114,18 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023 Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/WinkiH/CASA0023_LearningDiary" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -151,7 +136,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">About me</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">About</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -256,7 +241,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <p>Synthetic Aperture Radar – SAR is an active sensor that its bands are able to pass through clouds and reaching the ground/ target surface, disregarding the weather condition e.g., percentage of cloud covers during the sensing date. It has a total of 8 bands that are tailored for different applications, its wavelength also has their own frequencies so that they would not be disturbed by other sensors. It is important to note that <em>calm</em> water usually appears dark in the SAR image as they reflect the energy pulses away from sensor (pulses cannot be reflected back to the sensor).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="SAR-wavelength"><img src="images/SARwavelength.png" class="img-fluid figure-img"></a></p>
+<p><img src="images/SARwavelength.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Wavelength of different bands in SAR</figcaption>
 </figure>
 </div>
@@ -272,7 +257,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <p>Here it is also important to note <em>rough</em> water surface e.g., wavy during windy time or tsunami can reflect pules back through VV transmission.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="SAR-polarisation"><img src="images/SARPolarization.jpg" class="img-fluid figure-img"></a></p>
+<p><img src="images/SARPolarization.jpg" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Graph showing different polarisation from different objects.</figcaption>
 </figure>
 </div>
@@ -292,15 +277,15 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 <p>As mentioned above, SAR images are useful in detecting land motion (uplift or subsidence), therefore, I have chosen a case study of detecting vertical land motion – land deformation along the Houston-Galveston region in Texas, the USA <span class="citation" data-cites="QU2015290">(<a href="references.html#ref-QU2015290" role="doc-biblioref">Qu et al. 2015</a>)</span>. The Houston-Galveston is vulnerable to land subsidence due to its natural lithology – compaction of fine-grained sediments e.g., clay and silt AND human influence – groundwater extraction that led to compaction of soil <span class="citation" data-cites="usgs">(<a href="references.html#ref-usgs" role="doc-biblioref">USGS, n.d.</a>)</span>. The authors compare SAR images from ERS-1/2 ENVISAT SARs and ALOS POLSAR across different timescale, to perform multi-temporal – PS-InSAR analysis <span class="citation" data-cites="QU2015290">(<a href="references.html#ref-QU2015290" role="doc-biblioref">Qu et al. 2015</a>)</span>. For spatial analysis, interferogram and choropleths map is produced to identify regions that are subjected to intense vertical land movement – land subsidence. This provides an insight to the audience of areas that are prone to land subsidence, to address the urgency in mitigating local land subsidence e.g., through policy regulations or hard engineering methods <span class="citation" data-cites="piahs-382-809-2020">(<a href="references.html#ref-piahs-382-809-2020" role="doc-biblioref">Sneed and Brandt 2020</a>)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="huston-spatial"><img src="images/Huston_spatial.jpg" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Spatial deformation map in Huston-Galveston using InSAR techniques. a). ERS b). Envisat c). ALOS .</figcaption>
+<p><img src="images/Huston_spatial.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Spatial deformation map in Huston-Galveston using InSAR techniques. a). ERS b). Envisat c). ALOS <span class="citation" data-cites="QU2015290">(<a href="references.html#ref-QU2015290" role="doc-biblioref">Qu et al. 2015</a>)</span>.</figcaption>
 </figure>
 </div>
 <p>For temporal analysis, the authors demonstrate the changes of land elevation across (more than) 32 years. This provides a comprehensive overview of changes land subsidence rates across the trend, enabling the audience to identify the significance of land subsidence to the local region across time.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Huston-temporal"><img src="images/huston_temporal.jpg" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Land subsidence across time series for at least 32 years (temporal analysis) in Huston-Galveston using InSAR techniques .</figcaption>
+<p><img src="images/huston_temporal.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Land subsidence across time series for at least 32 years (temporal analysis) in Huston-Galveston using InSAR techniques <span class="citation" data-cites="QU2015290">(<a href="references.html#ref-QU2015290" role="doc-biblioref">Qu et al. 2015</a>)</span>.</figcaption>
 </figure>
 </div>
 <p>The merits of <span class="citation" data-cites="QU2015290">Qu et al. (<a href="references.html#ref-QU2015290" role="doc-biblioref">2015</a>)</span> papers are they also conducted analysis on the possible contributing factors of land subsidence e.g., hydrologic settings (changes in channel characteristics in Huston-Galveston), fault systems, and lithological settings (soil profile). This allows the analysis of causal relationship between the physical settings and land subsidence. However, the limitation of this paper falls on the omission of human influence to land subsidence. The high-resolution-SAR images would undoubtedly be beneficial for identifying the changes in spatial distribution of water body e.g., enhanced coastal floodings due to land subsidence <span class="citation" data-cites="navarro-hernández2023">(<a href="references.html#ref-navarro-hernández2023" role="doc-biblioref">Navarro-Hernández et al. 2023</a>)</span>. The utilisation of SAR imagery in this papers leaves room for improvements. &nbsp;</p>
@@ -308,6 +293,7 @@ gtag('config', 'G-5LZK055F2X', { 'anonymize_ip': true});
 </section>
 <section id="reflections" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">9.3</span> Reflections</h2>
+<p>SAR image is just another level…! It does not only provide a high resolution but also not limited by weather condition (they can pass through clouds)! It is extremely useful for remotely sensing places with cloud covered all the time e.g., the tropical areas (Indonesia, Singapore, Brazil… etc.) where there are rapid and frequent cloud formation. I was, again, amazed by how far the technology could go in remote sensing! It facilitates monitoring in environmental changes in tropical countries, where natural disaster and human influence e.g., deforestation are rapidly taking place. The availability of SAR would definitely be beneficial to those countries (or at least research around those regions). Another reason for SAR being on the next level is that SAR allows the generation of inteferogram, therefore, monitoring land displacement. It is a breakthrough in the monitoring of vertical land movement (VLM) brought by both human and physical factors, just by comparing two satellite imagery across different times. Satellite missions with SAR on-board e.g., Sentinel-1/ ALOS have made many positive contributions in monitoring displacement of land. That’s why I am saying SAR is on the next level!</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">

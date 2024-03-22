@@ -16,9 +16,9 @@ Remote sensing is usually achieved using remote sensors that are on board with t
 
 Remote sensing mainly adopt two different types of sensors on board each of the satellite or aircrafts -- active and/ or passive. Active sensor actively emit energy, electromagnetic waves, to the ground or targeted surfaces. It then detects any changes in the returning signal (e.g., wavelength) and calculate the returning time for the approximate distance between the two. Passive sensor does not emit energy, it detects the reflected energy (also electromagnetic waves) from the illuminating source -- the Sun.
 
-![Graph illustration showing the operations of active sensor [@gisgeography2024]. ](images/Active-Satellite-Double-Bounce.png){fig-align="center"}
+![Graph illustration showing the operations of active sensor [@gisgeography2024].](images/Active-Satellite-Double-Bounce.png){fig-align="center"}
 
-![Graph illustration showing the operation of passive sensor [@gisgeography2024]. ](images/passive-satellite.png)
+![Graph illustration showing the operation of passive sensor [@gisgeography2024].](images/passive-satellite.png)
 
 #### Electromagnetic waves
 

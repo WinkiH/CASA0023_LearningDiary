@@ -5,18 +5,18 @@ project:
 book:
   title: "CASA0023 Learning Diary"
   author: "Wing Ka Ho"
-  navbar:
-    logo: "images/casa_logo.png"
-    collapse: true
-    collapse-below: lg
-    background: light
-    reader-mode: true
-    search: true
-    right:
-      - icon: github
+  #navbar:
+    #logo: "images/casa_logo.png"
+    #collapse: true
+    #collapse-below: lg
+    #background: light
+    #reader-mode: true
+    #search: true
+    #right:
+      #- icon: github
   sidebar:
-    title: "CASA0023 Remotely Sensing Cities and Environments"
-    style: docked
+    #title: "CASA0023 Remotely Sensing Cities and Environments"
+    #style: docked
     reader-mode: true
   repo-url: https://github.com/WinkiH/CASA0023_LearningDiary
   repo-actions: [issue]
